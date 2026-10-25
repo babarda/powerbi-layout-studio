@@ -1,0 +1,897 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Power BI Layout Studio: page backgrounds, navigation and a ready .pbip · Badr Abardazzou</title><meta name="description" content="Free Power BI layout generator. Pick a navigation frame, a palette and a page layout, drag the cards on a live canvas, then download the page backgrounds (PNG or SVG), the matching theme .json, the exact X, Y, W, H of every visual, and a .pbip project with working page navigation. Runs in your browser, nothing uploaded."><link rel="canonical" href="https://babarda.com/tools/powerbi-layout/"><link rel="icon" type="image/svg+xml" href="https://babarda.com/favicon.svg"><link rel="alternate" type="application/rss+xml" title="Papers by Badr Abardazzou" href="https://babarda.com/rss.xml"><meta property="og:title" content="Power BI Layout Studio: page backgrounds, navigation and a ready .pbip · Badr Abardazzou"><meta property="og:description" content="Free Power BI layout generator. Pick a navigation frame, a palette and a page layout, drag the cards on a live canvas, then download the page backgrounds (PNG or SVG), the matching theme .json, the exact X, Y, W, H of every visual, and a .pbip project with working page navigation. Runs in your browser, nothing uploaded."><meta property="og:url" content="https://babarda.com/tools/powerbi-layout/"><meta property="og:type" content="website"><meta property="og:site_name" content="Badr Abardazzou"><meta property="og:image" content="https://babarda.com/og-default.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Power BI Layout Studio: page backgrounds, navigation and a ready .pbip · Badr Abardazzou"><meta name="twitter:description" content="Free Power BI layout generator. Pick a navigation frame, a palette and a page layout, drag the cards on a live canvas, then download the page backgrounds (PNG or SVG), the matching theme .json, the exact X, Y, W, H of every visual, and a .pbip project with working page navigation. Runs in your browser, nothing uploaded."><meta name="twitter:image" content="https://babarda.com/og-default.png"><meta name="author" content="Badr Abardazzou"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Hanken+Grotesk:wght@400;500;600;800&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Badr Abardazzou","jobTitle":"Information Designer, Project Controls","description":"Information designer working in Project Controls on large-scale Energy & Mining EPC projects. Building the Open Visualization Protocol (OVP), an open, deterministic standard for information design.","url":"https://babarda.com","sameAs":["https://www.linkedin.com/in/badr-abardazzou-4a460938/","https://github.com/babarda"],"knowsAbout":["Information Design","Project Controls","EPC Projects","Data Visualization","AI Agents"]}</script><style>:root{--paper: #FFFFFF;--plate: #FFFFFF;--ink: #111827;--mid: #54635F;--faint: #8A9793;--hair: rgba(24, 50, 46, .1);--hair-2: rgba(24, 50, 46, .18);--teal: #0E9D8A;--teal-ink: #0B7A6C;--teal-wash: rgba(14, 157, 138, .07);--serif: "Fraunces", Georgia, serif;--sans: "Hanken Grotesk", "Segoe UI", system-ui, sans-serif;--mono: "IBM Plex Mono", ui-monospace, "Consolas", monospace}*{box-sizing:border-box}html,body{margin:0;padding:0}body{background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}.page{min-height:100vh}.shell{max-width:780px;margin:0 auto;min-height:100vh;padding:0 clamp(20px,5vw,32px);display:flex;flex-direction:column}main{flex:1}a{color:inherit}a:focus-visible,button:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:2px}.topbar{display:flex;align-items:baseline;gap:16px 26px;flex-wrap:wrap;padding:30px 0 18px}.brand{font-weight:800;font-size:1.16rem;letter-spacing:-.035em;color:var(--ink);text-decoration:none}.nav{display:flex;gap:22px;margin-left:auto}.nav a{font-size:.93rem;color:var(--mid);text-decoration:none;padding:4px 0;position:relative}.nav a:hover{color:var(--ink)}.nav a.on{color:var(--ink);font-weight:600}.nav a.on:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--teal);border-radius:2px}.icons{display:flex;gap:14px}.icons a{color:var(--faint);line-height:0}.icons a:hover{color:var(--teal-ink)}.icons svg{width:17px;height:17px}@media(max-width:560px){.nav{margin-left:0;gap:8px 16px;flex-wrap:wrap}}.btn{font-size:.88rem;font-weight:600;text-decoration:none;border-radius:8px;padding:12px 20px;display:inline-flex;align-items:center;gap:9px;transition:transform .16s ease,background .16s ease,border-color .16s ease,color .16s ease}.btn.solid{background:#101b18;color:#fff;box-shadow:0 1px 2px #101b1829}.btn.solid:hover{transform:translateY(-1px);background:#1b2b27}.btn.line{border:1px solid var(--hair-2);color:var(--ink)}.btn.line:hover{border-color:var(--teal-ink);color:var(--teal-ink)}.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--teal-ink);margin:0 0 18px}.eyebrow:before{content:"";width:24px;height:1px;background:var(--teal)}.sitefoot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:22px 0 clamp(34px,6vw,52px);margin-top:clamp(50px,8vw,80px);border-top:1px solid var(--hair);font-family:var(--mono);font-size:.72rem;color:var(--faint);letter-spacing:.02em}.sitefoot a{text-decoration:none;color:var(--faint)}.sitefoot a:hover{color:var(--teal-ink)}@media(prefers-reduced-motion:no-preference){.reveal{opacity:0;transform:translateY(10px);animation:rise .7s cubic-bezier(.2,.7,.2,1) forwards}.d1{animation-delay:.04s}.d2{animation-delay:.1s}.d3{animation-delay:.16s}.d4{animation-delay:.22s}@keyframes rise{to{opacity:1;transform:none}}}
+</style>
+<style>.shell:has(.lg){max-width:1440px}.lg{--panel:#FBFCFB;--body:#293a35;--ink2:#101B18;--fail:#C0402E;color:var(--body);font-size:1.02rem;line-height:1.6}.lg a{color:var(--teal-ink);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1.5px;text-decoration-color:#0e9d8a66}.lg .head{padding:clamp(30px,5vw,52px) 0 clamp(14px,2vw,22px)}.lg .eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--teal-ink);margin:0 0 20px}.lg .eyebrow:before{content:"";width:26px;height:1px;background:var(--teal)}.lg .eyebrow a{color:inherit;text-decoration:none}.lg h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.1rem,5vw,3.1rem);line-height:1.08;letter-spacing:-.7px;margin:0;color:var(--ink2)}.lg .dek{color:var(--mid);margin:18px 0 0;max-width:70ch;font-size:1.08rem;line-height:1.55}.lg .steps{list-style:none;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0 0}.lg .steps li{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;background:var(--panel);border:1px solid var(--hair-2);border-radius:14px}.lg .two-n{flex:none;width:30px;height:30px;border-radius:50%;background:var(--ink2);color:#fff;font-family:var(--serif);font-size:1rem;font-weight:600;display:flex;align-items:center;justify-content:center}.lg .steps b{display:block;font-family:var(--serif);font-size:1.14rem;color:var(--ink2);margin:2px 0 4px}.lg .steps p{margin:0;font-size:.88rem;color:var(--mid);line-height:1.5}.lg .secn{flex:none;width:24px;height:24px;border-radius:50%;background:var(--teal-ink);color:#fff;font-family:var(--sans, system-ui);font-size:.8rem;font-weight:600;display:inline-flex;align-items:center;justify-content:center}.lg .sec{font-family:var(--serif);font-weight:600;font-size:1.45rem;margin:44px 0 12px;color:var(--ink2);display:flex;align-items:center;gap:12px}.lg .sec .secn{width:28px;height:28px;font-size:.9rem}.lg .lbl{font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-ink);font-weight:600;margin:14px 0 6px;display:block}.lg code{font-family:ui-monospace,Consolas,monospace;font-size:.84em;background:#eef3f1;border-radius:4px;padding:1px 5px;color:var(--ink2)}.lg .k{font-weight:600;color:var(--ink2);background:#fff;border:1px solid var(--hair-2);border-radius:5px;padding:0 5px;white-space:nowrap;font-size:.92em}.lg .app{display:grid;grid-template-columns:316px minmax(0,1fr);gap:22px;align-items:start;margin:28px 0 0}.lg .rail{position:sticky;top:12px;max-height:calc(100vh - 24px);overflow:auto;background:var(--panel);border:1px solid var(--hair-2);border-radius:16px;padding:6px 14px 14px;scrollbar-width:thin}.lg .grp{border-bottom:1px solid var(--hair);padding:4px 0 12px}.lg .grp:last-child{border-bottom:none}.lg .gh{margin:0;font-size:1rem}.lg .gt{all:unset;cursor:pointer;display:flex;align-items:center;gap:10px;width:100%;padding:10px 0 4px;font-family:var(--serif);font-weight:600;font-size:1.08rem;color:var(--ink2)}.lg .gt:after{content:"";margin-left:auto;width:8px;height:8px;border-right:1.6px solid var(--faint);border-bottom:1.6px solid var(--faint);transform:rotate(45deg);transition:transform .15s}.lg .grp[data-open="0"] .gt:after{transform:rotate(-45deg)}.lg .grp[data-open="0"] .gb{display:none}.lg .gt:focus-visible{outline:2px solid var(--teal-ink);outline-offset:3px;border-radius:6px}.lg .frames{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:8px}.lg .fr{font:inherit;cursor:pointer;background:#fff;border:1px solid var(--hair-2);border-radius:10px;padding:5px 5px 6px;display:flex;flex-direction:column;gap:4px;text-align:left;transition:border-color .12s,box-shadow .12s}.lg .fr svg{width:100%;height:auto;display:block;border-radius:6px}.lg .fr span{font-size:.74rem;font-weight:600;color:var(--ink2);padding:0 3px}.lg .fr:hover{border-color:var(--teal)}.lg .fr.on,.lg .cs.on,.lg .lay.on,.lg .sz.on{border-color:var(--teal-ink);box-shadow:0 0 0 1.5px var(--teal-ink) inset}.lg .seg{display:inline-flex;border:1px solid var(--hair-2);border-radius:10px;overflow:hidden;background:#fff}.lg .seg.wide{display:flex;width:100%}.lg .seg button{font:inherit;flex:1;font-size:.8rem;font-weight:600;border:none;background:none;padding:7px 8px;color:var(--mid);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:6px;white-space:nowrap}.lg .seg button+button{border-left:1px solid var(--hair)}.lg .seg button.on{background:var(--ink2);color:#fff}.lg .seg button i{width:12px;height:12px;border-radius:3px;border:1px solid rgba(0,0,0,.15);flex:none}.lg .sizes{display:grid;grid-template-columns:repeat(2,1fr);gap:6px}.lg .sz{flex-direction:row!important;justify-content:flex-start;gap:9px!important;padding:7px 9px!important}.lg .sz span{text-align:left!important}.lg .sz{font:inherit;cursor:pointer;background:#fff;border:1px solid var(--hair-2);border-radius:9px;padding:7px 4px 6px;display:flex;flex-direction:column;align-items:center;gap:5px}.lg .sz i{display:block;border:1.5px solid var(--ink2);border-radius:2px}.lg .sz span{font-size:.66rem;line-height:1.15;color:var(--mid);text-align:center}.lg .sz span b{display:block;color:var(--ink2);font-size:.7rem}.lg .pals{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-top:10px}.lg .pal{font:inherit;cursor:pointer;background:#fff;border:1px solid var(--hair-2);border-radius:9px;padding:6px 7px;display:flex;align-items:center;gap:7px;min-width:0}.lg .pal:hover{border-color:var(--teal)}.lg .pal.on{border-color:var(--teal-ink);box-shadow:0 0 0 1.5px var(--teal-ink) inset}.lg .pal .pstrip{display:flex;width:46px;height:14px;border-radius:3px;overflow:hidden;flex:none}.lg .pal .pstrip i{flex:1}.lg .pal .pn{font-size:.72rem;font-weight:600;letter-spacing:.04em;color:var(--ink2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.lg .acc{display:flex;align-items:center;gap:10px;margin-top:10px;padding:8px 10px;background:#fff;border:1px solid var(--hair-2);border-radius:10px}.lg .acc span{flex:1;min-width:0;line-height:1.2}.lg .acc b{display:block;font-size:.8rem;color:var(--ink2)}.lg .acc small{font-family:ui-monospace,Consolas,monospace;font-size:.72rem;color:var(--faint)}.lg input[type=color]{width:34px;height:30px;padding:0;border:1px solid var(--hair-2);border-radius:7px;background:#fff;cursor:pointer;flex:none}.lg input[type=color]::-webkit-color-swatch-wrapper{padding:2px}.lg input[type=color]::-webkit-color-swatch{border:none;border-radius:5px}.lg .chk{display:flex;align-items:center;gap:8px;font-size:.84rem;color:var(--ink2);margin:10px 0 0;cursor:pointer}.lg .chk input{accent-color:var(--teal-ink);width:16px;height:16px;margin:0}.lg .plist{list-style:none;padding:0;margin:10px 0 8px;display:flex;flex-direction:column;gap:5px}.lg .plist li{display:flex;align-items:center;gap:5px}.lg .plist li.cur input[type=text]{border-color:var(--teal-ink)}.lg .pico{flex:none;width:30px;height:30px;border:1px solid var(--hair-2);border-radius:8px;background:#fff;color:var(--ink2);cursor:pointer;padding:0;display:flex;align-items:center;justify-content:center}.lg .pico svg,.lg .ib svg,.lg .addb svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.lg .pico:hover{border-color:var(--teal-ink);color:var(--teal-ink)}.lg input[type=text]{font:inherit;font-size:.86rem;border:1px solid var(--hair-2);border-radius:8px;padding:5px 8px;background:#fff;color:var(--ink2);min-width:0;box-sizing:border-box}.lg .plist input[type=text]{flex:1}.lg .ib{flex:none;width:28px;height:28px;border:1px solid var(--hair-2);border-radius:7px;background:#fff;color:var(--mid);cursor:pointer;font-size:.86rem;line-height:1;padding:0;display:inline-flex;align-items:center;justify-content:center}.lg .ib:hover:not([disabled]){border-color:var(--teal-ink);color:var(--teal-ink)}.lg .ib[disabled]{opacity:.3;cursor:default}.lg .ib.x:hover:not([disabled]){border-color:var(--fail);color:var(--fail)}.lg .ib.tg[aria-pressed=true]{background:var(--ink2);color:#fff;border-color:var(--ink2)}.lg .txt{display:flex;flex-direction:column;gap:8px;margin-top:14px}.lg .txt label{display:flex;flex-direction:column;gap:3px;font-size:.76rem;font-weight:600;color:var(--mid)}.lg .txt label small{font-weight:400;color:var(--faint)}.lg .logorow{display:flex;align-items:center;gap:8px}.lg .logoprev{width:40px;height:40px;border:1px dashed var(--hair-2);border-radius:8px;background:#fff center/contain no-repeat;flex:none}.lg .cstyles{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:8px}.lg .cs{font:inherit;cursor:pointer;background:#fff;border:1px solid var(--hair-2);border-radius:9px;padding:5px 4px 4px;display:flex;flex-direction:column;align-items:center;gap:3px}.lg .cs svg{width:100%;height:auto;display:block}.lg .cs span{font-size:.66rem;font-weight:600;color:var(--ink2)}.lg .rng{display:flex;flex-direction:column;gap:2px;margin-top:12px;font-size:.8rem;color:var(--ink2)}.lg .rng b{font-weight:600;color:var(--teal-ink)}.lg .rng input{accent-color:var(--teal-ink);width:100%}.lg .btn2{font:inherit;font-size:.84rem;font-weight:600;background:#fff;color:var(--teal-ink);border:1px solid var(--teal-ink);border-radius:9px;padding:7px 12px;cursor:pointer;line-height:1.25}.lg .btn2:hover:not([disabled]){background:var(--teal-wash)}.lg .btn2[disabled]{opacity:.45;cursor:default}.lg .btn2.quiet{border-color:var(--hair-2);color:var(--mid)}.lg .btn2.small{padding:4px 9px;font-size:.76rem}.lg .btn2.full{width:100%}.lg .btn2.danger{border-color:#c0402e80;color:var(--fail)}.lg .btnrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:8px}.lg .stage{min-width:0}.lg .tabsbar{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;border-bottom:1px solid var(--hair-2)}.lg .ptabs{display:flex;gap:2px;overflow-x:auto;overflow-y:hidden;min-width:0;scrollbar-width:thin}.lg .ptab{font:inherit;font-size:.84rem;font-weight:600;border:1px solid transparent;border-bottom:none;background:none;color:var(--mid);padding:8px 14px 9px;border-radius:10px 10px 0 0;cursor:pointer;white-space:nowrap;display:inline-flex;align-items:center;gap:7px;margin-bottom:-1px}.lg .ptab svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.lg .ptab:hover{color:var(--ink2)}.lg .ptab.on{background:#fff;border-color:var(--hair-2);color:var(--ink2)}.lg .tools2{display:flex;gap:6px;padding-bottom:7px}.lg .add{display:flex;flex-wrap:wrap;gap:6px;padding:10px 0;align-items:center}.lg .add .lbl{margin:0 6px 0 0}.lg .addb{font:inherit;font-size:.78rem;font-weight:600;background:#fff;border:1px solid var(--hair-2);color:var(--ink2);border-radius:99px;padding:5px 11px 5px 8px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}.lg .addb:hover{border-color:var(--teal-ink);color:var(--teal-ink)}.lg .addb.on{background:var(--ink2);border-color:var(--ink2);color:#fff}.lg .canvaswrap{position:relative;border-radius:12px;padding:18px;background:#e9eeec;background-image:radial-gradient(rgba(16,27,24,.09) 1px,transparent 1px);background-size:14px 14px;outline:none}.lg .canvaswrap:focus-visible{box-shadow:0 0 0 2px var(--teal-ink)}.lg .canvas{line-height:0;border-radius:4px;overflow:hidden;box-shadow:0 1px 2px #101b181f,0 18px 40px -18px #10282273;touch-action:none;user-select:none;-webkit-user-select:none}.lg .canvas svg{width:100%;height:auto;display:block}.lg .canvas [data-card]{cursor:move}.lg .canvas [data-handle]{cursor:nwse-resize}.lg .canvas.drawing{cursor:crosshair}.lg .capt{margin:8px 0 0;font-size:.78rem;color:var(--faint);display:flex;gap:14px;flex-wrap:wrap}.lg .capt b{color:var(--fail);font-weight:600}.lg .below{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:16px;margin-top:14px;align-items:start}.lg .lays{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:7px}.lg .lay{font:inherit;cursor:pointer;background:#fff;border:1px solid var(--hair-2);border-radius:9px;padding:5px 5px 4px;display:flex;flex-direction:column;gap:3px}.lg .lay svg{width:100%;height:auto;display:block}.lg .lay span{font-size:.68rem;font-weight:600;color:var(--ink2)}.lg .lay:hover{border-color:var(--teal)}.lg .insp{background:var(--panel);border:1px solid var(--hair-2);border-radius:14px;padding:12px 14px;min-height:120px}.lg .insp .ih{display:flex;align-items:center;justify-content:space-between;gap:8px}.lg .insp h3{margin:0;font-family:var(--serif);font-size:1.05rem;color:var(--ink2)}.lg .insp p{margin:6px 0 0;font-size:.84rem;color:var(--mid);line-height:1.5}.lg .insp .types{display:flex;flex-wrap:wrap;gap:4px;margin:8px 0}.lg .insp .types .addb{padding:4px 9px 4px 7px;font-size:.72rem}.lg .insp label{display:flex;flex-direction:column;gap:3px;font-size:.74rem;font-weight:600;color:var(--mid)}.lg .insp .nums{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:10px 0 0}.lg .insp .nums div{background:#fff;border:1px solid var(--hair);border-radius:8px;padding:4px 7px}.lg .insp .nums small{display:block;font-family:var(--mono);font-size:.58rem;letter-spacing:.1em;color:var(--faint);text-transform:uppercase}.lg .insp .nums b{font-size:.92rem;color:var(--ink2);font-variant-numeric:tabular-nums}.lg .insp .keys{font-size:.72rem;color:var(--faint);margin-top:8px}.lg .insp .keys kbd{font-family:ui-monospace,Consolas,monospace;font-size:.68rem;border:1px solid var(--hair-2);border-bottom-width:2px;border-radius:4px;padding:0 4px;background:#fff;color:var(--ink2)}.lg .dlmain{display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding:18px 20px;background:var(--ink2);border-radius:14px}.lg .dlbtn{font:inherit;font-size:1.02rem;font-weight:700;background:#8fe3d3;color:#0b2a24;border:none;border-radius:11px;padding:13px 22px;cursor:pointer}.lg .dlbtn:hover{background:#b5efe4}.lg .dlbtn[disabled]{opacity:.6;cursor:progress}.lg .dlmeta{display:flex;flex-direction:column;color:#c9d6d2;font-size:.84rem;min-width:0;flex:1}.lg .dlmeta b{color:#fff;font-weight:600;font-size:.95rem;word-break:break-all}.lg .files{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:12px 0 0}.lg .file{background:var(--panel);border:1px solid var(--hair-2);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:4px;min-width:0}.lg .file b{font-size:.92rem;color:var(--ink2)}.lg .file .fdesc{font-size:.78rem;color:var(--mid);line-height:1.45}.lg .status{min-height:1.4em;margin:10px 0 0;font-size:.86rem;color:var(--teal-ink)}.lg .status.err{color:var(--fail)}.lg .postab{margin:18px 0 0}.lg .phead{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}.lg .sub{font-family:var(--serif);font-size:1.15rem;font-weight:600;color:var(--ink2);margin:0}.lg .secnote{font-size:.8rem;color:var(--faint)}.lg .tscroll{overflow-x:auto;margin-top:8px;border-top:1px solid var(--hair-2)}.lg table{width:100%;border-collapse:collapse;font-size:.84rem;font-variant-numeric:tabular-nums}.lg th{text-align:left;font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);font-weight:600;padding:8px 10px 6px;border-bottom:1px solid var(--hair-2);white-space:nowrap}.lg td{padding:6px 10px;border-bottom:1px solid var(--hair);color:var(--ink2);white-space:nowrap}.lg td.n,.lg th.n{text-align:right}.lg td .kd{display:inline-flex;align-items:center;gap:6px;color:var(--mid)}.lg td .kd i{width:10px;height:10px;border-radius:2px;display:inline-block}.lg td.sl{color:var(--teal-ink);font-weight:600}.lg tr.on td{background:var(--teal-wash)}.lg .notes{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:36px 0 0;align-items:start}.lg .booknote{margin:0;padding:18px 20px;border-left:3px solid var(--teal);background:var(--panel);border-radius:0 12px 12px 0;font-size:.93rem;line-height:1.6;min-width:0}.lg .booknote b{color:var(--ink2)}@media(max-width:1100px){.lg .app{grid-template-columns:1fr}.lg .rail{position:static;max-height:none;order:2}.lg .frames,.lg .pals{grid-template-columns:repeat(4,1fr)}.lg .files{grid-template-columns:1fr 1fr}}@media(max-width:720px){.lg .steps,.lg .below,.lg .notes,.lg .files{grid-template-columns:1fr}.lg .frames,.lg .pals{grid-template-columns:repeat(2,1fr)}.lg .canvaswrap{padding:8px}.lg .tabsbar{flex-direction:column;align-items:stretch}.lg .tools2{justify-content:flex-end}}
+</style></head> <body> <div class="page"> <div class="shell"> <header class="topbar"> <a href="https://babarda.com/" class="brand">Badr Abardazzou</a> <nav class="nav" aria-label="Primary"> <a href="https://babarda.com/" class>Home</a><a href="https://babarda.com/library" class>Library</a><a href="https://babarda.com/museum" class>Museum</a><a href="https://babarda.com/projects" class>Projects</a><a href="https://babarda.com/tools" class="on">Tools</a><a href="https://babarda.com/templates" class>Templates</a><a href="https://babarda.com/papers" class>Papers</a><a href="https://babarda.com/about" class>About</a> </nav> <div class="icons"> <a href="https://www.linkedin.com/in/badr-abardazzou-4a460938/" aria-label="LinkedIn" target="_blank" rel="noopener"> <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2.05 3.76-2.05 4.02 0 4.76 2.64 4.76 6.08V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.07 1.4-2.07 2.85V21h-4z"></path></svg> </a> <a href="https://github.com/babarda" aria-label="GitHub" target="_blank" rel="noopener"> <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49l-.01-1.7c-2.78.62-3.37-1.22-3.37-1.22-.46-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.35 1.12 2.92.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9l-.01 2.82c0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"></path></svg> </a> </div> </header> <main>  <div class="pa tool lg"> <script type="application/json" id="lg-presets">[{"id":"agraw","code":"DL-01","name":"AGRAW","motto":"Lead with wisdom.","madeFor":"board packs, steering committees","brand":{"name":"AGRAW","colors":["#008080","#C9C6BF","#D8D5CE","#2E6E4E","#8B1E1E"],"background":"#FFFFFF","panel":"#FAFAF7","ink":"#1A1A1A","body":"#3D3D3D","hairline":"#D8D5CE","gridline":"#EFEDE8","good":"#2E6E4E","bad":"#8B1E1E","neutral":"#C9C6BF","fontHeading":"EB Garamond","fontBody":"Segoe UI"}},{"id":"kata","code":"DL-02","name":"KATA","motto":"Perfect through repetition.","madeFor":"weekly status decks, progress dashboards","brand":{"name":"KATA","colors":["#008080","#005F5F","#B7DCDC","#AAAAAA","#339966","#D63A2F","#E08A00"],"background":"#FFFFFF","panel":"#F7FAFA","ink":"#222222","body":"#555555","hairline":"#E2E8E8","gridline":"#EAEAEA","good":"#339966","bad":"#D63A2F","neutral":"#E08A00","fontHeading":"Rethink Sans","fontBody":"Poppins"}},{"id":"logos","code":"DL-03","name":"LOGOS","motto":"Evidence before opinion.","madeFor":"deep-dive analysis, monthly chartbooks","brand":{"name":"LOGOS","colors":["#9E2B25","#B8B2A7","#E8E0D4","#2E6E4E"],"background":"#FDF4EA","panel":"#FDF4EA","ink":"#262A33","body":"#4A4E57","hairline":"#E8E0D4","gridline":"#E8E0D4","good":"#2E6E4E","bad":"#9E2B25","neutral":"#B8B2A7","fontHeading":"Oswald","fontBody":"Segoe UI"}},{"id":"shilpa","code":"DL-04","name":"SHILPA","motto":"Craft every detail.","madeFor":"technical packs, procedures","brand":{"name":"SHILPA","colors":["#1B6E8F","#C6D5E0","#2E6E4E","#9E2B25","#B54708"],"background":"#FBFDFF","panel":"#EDF3F7","ink":"#143D59","body":"#33424E","hairline":"#C6D5E0","gridline":"#E7EEF4","good":"#2E6E4E","bad":"#9E2B25","neutral":"#B54708","fontHeading":"Segoe UI","fontBody":"Segoe UI"}},{"id":"obeya","code":"DL-05","name":"OBEYA","motto":"See together. Decide together.","madeFor":"stand-up boards, site wall prints","brand":{"name":"OBEYA","colors":["#C2410C","#64748B","#1F7A4D","#B91C1C"],"background":"#FFFFFF","panel":"#FFFFFF","ink":"#0F172A","body":"#334155","hairline":"#64748B","gridline":"#CBD5E1","good":"#1F7A4D","bad":"#B91C1C","neutral":"#64748B","fontHeading":"Segoe UI","fontBody":"Segoe UI"}},{"id":"lex","code":"DL-06","name":"LEX","motto":"Everything must be traceable.","madeFor":"claims, mediation, correspondence","brand":{"name":"LEX","colors":["#7A1F1F","#B9B9B9","#333333"],"background":"#FFFFFF","panel":"#FFFFFF","ink":"#1A1A1A","body":"#333333","hairline":"#B9B9B9","gridline":"#CCCCCC","good":"#333333","bad":"#7A1F1F","neutral":"#B9B9B9","fontHeading":"Georgia","fontBody":"Georgia"}},{"id":"saga","code":"DL-07","name":"SAGA","motto":"Every report becomes history.","madeFor":"weekly digests, bulletins","brand":{"name":"SAGA","colors":["#C0182B","#B0B0B0","#111111","#2E2E2E"],"background":"#FFFFFF","panel":"#FFFFFF","ink":"#111111","body":"#2E2E2E","hairline":"#111111","gridline":"#E4E4E4","good":"#2E2E2E","bad":"#C0182B","neutral":"#B0B0B0","fontHeading":"Georgia","fontBody":"Segoe UI"}},{"id":"sentinel","code":"DL-08","name":"SENTINEL","motto":"Watch without distraction.","madeFor":"live dashboards, control-room screens","brand":{"name":"SENTINEL","colors":["#F0B429","#5C6B78","#9FB0BE","#3FB68B","#E5534B","#58A6FF"],"background":"#101418","panel":"#1A2026","ink":"#E6EDF3","body":"#9FB0BE","hairline":"#2A323A","gridline":"#2A323A","good":"#3FB68B","bad":"#E5534B","neutral":"#5C6B78","fontHeading":"Segoe UI","fontBody":"Segoe UI"}},{"id":"atlas","code":"DL-09","name":"ATLAS","motto":"Always know where you are.","madeFor":"route progress, site status maps","brand":{"name":"ATLAS","colors":["#0F766E","#B9AE9C","#CDC3AE","#2E6E4E","#C2410C","#D7E4E8"],"background":"#F4EFE6","panel":"#EAE3D5","ink":"#2B3A42","body":"#4A5860","hairline":"#CDC3AE","gridline":"#E3DCCB","good":"#2E6E4E","bad":"#C2410C","neutral":"#B9AE9C","fontHeading":"Segoe UI","fontBody":"Segoe UI"}},{"id":"basira","code":"DL-10","name":"BASIRA","motto":"Look deeper than sight.","madeFor":"photo progress reports, drone updates","brand":{"name":"BASIRA","colors":["#F0B429","#8A9096","#3A3F44","#3FB68B","#E5534B"],"background":"#0B0B0B","panel":"#1C1F22","ink":"#FFFFFF","body":"#D9D9D9","hairline":"#3A3F44","gridline":"#3A3F44","good":"#3FB68B","bad":"#E5534B","neutral":"#8A9096","fontHeading":"Segoe UI","fontBody":"Segoe UI"}},{"id":"sutra","code":"DL-11","name":"SUTRA","motto":"Complexity distilled.","madeFor":"briefing notes, position papers","brand":{"name":"SUTRA","colors":["#1F3864","#A9BBD9","#8EAADB","#2E6E4E","#9E2B25"],"background":"#FFFFFF","panel":"#FFFFFF","ink":"#1F3864","body":"#262626","hairline":"#8EAADB","gridline":"#C9D6EE","good":"#2E6E4E","bad":"#9E2B25","neutral":"#A9BBD9","fontHeading":"Cambria","fontBody":"Cambria"}},{"id":"noroshi","code":"DL-12","name":"NOROSHI","motto":"Signal only what matters.","madeFor":"escalations, flash reports","brand":{"name":"NOROSHI","colors":["#D63A2F","#94A3B8","#E2E8F0","#1F7A4D","#B45309"],"background":"#FFFFFF","panel":"#FFFFFF","ink":"#0F172A","body":"#475569","hairline":"#E2E8F0","gridline":"#E2E8F0","good":"#1F7A4D","bad":"#D63A2F","neutral":"#B45309","fontHeading":"Segoe UI","fontBody":"Segoe UI"}},{"id":"mizan","code":"DL-13","name":"MIZAN","motto":"Balance creates clarity.","madeFor":"cultural projects, personal-brand material","brand":{"name":"MIZAN","colors":["#C4572E","#C9BBA4","#DCCFB6","#3D5A46","#7A3B1E","#31486E"],"background":"#F7EFE3","panel":"#F1E5D3","ink":"#31261D","body":"#4E4237","hairline":"#DCCFB6","gridline":"#E5D9C2","good":"#3D5A46","bad":"#7A3B1E","neutral":"#C9BBA4","fontHeading":"EB Garamond","fontBody":"Segoe UI"}},{"id":"evidentia","code":"DL-14","name":"EVIDENTIA","motto":"Proof over persuasion.","madeFor":"evidence-led strategy decks, diagnostic readouts","brand":{"name":"EVIDENTIA","colors":["#2251FF","#A9B4C0","#6E7E8E","#2E6E4E","#9E2B25"],"background":"#FFFFFF","panel":"#FFFFFF","ink":"#0B1F35","body":"#3C4A5A","hairline":"#C7D0D9","gridline":"#E3E8ED","good":"#2E6E4E","bad":"#9E2B25","neutral":"#A9B4C0","fontHeading":"Georgia","fontBody":"Segoe UI"}},{"id":"abrid","code":"DL-15","name":"ABRID","motto":"Everything is connected.","madeFor":"framework decks, portfolio reviews","brand":{"name":"ABRID","colors":["#197A56","#A7C4B5","#C9D2CC","#9E2B25"],"background":"#FFFFFF","panel":"#FFFFFF","ink":"#0E3A2C","body":"#3E4C46","hairline":"#C9D2CC","gridline":"#E5E7E2","good":"#197A56","bad":"#9E2B25","neutral":"#A7C4B5","fontHeading":"Segoe UI","fontBody":"Segoe UI"}},{"id":"telos","code":"DL-16","name":"TELOS","motto":"Every page serves a purpose.","madeFor":"results decks, due-diligence readouts","brand":{"name":"TELOS","colors":["#C4001A","#B5B1AB","#8C8880","#2E6E4E"],"background":"#FFFFFF","panel":"#FFFFFF","ink":"#1A1A1A","body":"#444444","hairline":"#D9D6D2","gridline":"#E8E6E2","good":"#2E6E4E","bad":"#C4001A","neutral":"#B5B1AB","fontHeading":"Segoe UI","fontBody":"Segoe UI"}}]</script> <div class="head"> <p class="eyebrow"><a href="https://babarda.com/tools/">Tools</a></p> <h1>Power BI Layout Studio</h1> <p class="dek">Design the page before you build the report. Choose a navigation frame and a palette, drag the cards into place on a live canvas, and download the backgrounds, the theme, the exact position of every visual and a Power BI project with the page buttons already wired.</p> </div> <ol class="steps"> <li><span class="two-n">1</span><div><b>Frame and colours</b><p>Seven navigation frames, 16 report palettes or your own brand colour, light or dark.</p></div></li> <li><span class="two-n">2</span><div><b>Arrange the cards</b><p>Start each page from a layout, then drag, resize or draw cards. Everything snaps to a 12 by 12 grid.</p></div></li> <li><span class="two-n">3</span><div><b>Take it to Power BI</b><p>PNG backgrounds, a theme .json, a positions table and a .pbip with navigation that works.</p></div></li> </ol> <div class="app" id="lg-app"> <!-- ============================================================ RAIL --> <aside class="rail" aria-label="Layout settings"> <section class="grp" data-open="1"> <h2 class="gh"><button type="button" class="gt" aria-expanded="true"><span class="secn">1</span>Frame</button></h2> <div class="gb"> <div class="frames" id="lg-frames"></div> <div class="lbl">Navigation colour</div> <div class="seg wide" id="lg-navtone"></div> <div class="lbl">Active page</div> <div class="seg wide" id="lg-active"> <button type="button" data-v="fill">Filled</button> <button type="button" data-v="bar">Edge bar</button> </div> <div class="lbl">Canvas size</div> <div class="sizes" id="lg-sizes"></div> </div> </section> <section class="grp" data-open="1"> <h2 class="gh"><button type="button" class="gt" aria-expanded="true"><span class="secn">2</span>Colours</button></h2> <div class="gb"> <div class="seg wide" id="lg-mode"> <button type="button" data-v="light">Light</button> <button type="button" data-v="dark">Dark</button> </div> <div class="pals" id="lg-pals"> <button type="button" class="pal" data-id="agraw" aria-label="Use the AGRAW palette, made for board packs, steering committees" title="board packs, steering committees"> <span class="pstrip"><i style="background:#008080"></i><i style="background:#C9C6BF"></i><i style="background:#D8D5CE"></i><i style="background:#2E6E4E"></i><i style="background:#8B1E1E"></i></span> <span class="pn">AGRAW</span> </button><button type="button" class="pal" data-id="kata" aria-label="Use the KATA palette, made for weekly status decks, progress dashboards" title="weekly status decks, progress dashboards"> <span class="pstrip"><i style="background:#008080"></i><i style="background:#005F5F"></i><i style="background:#B7DCDC"></i><i style="background:#AAAAAA"></i><i style="background:#339966"></i></span> <span class="pn">KATA</span> </button><button type="button" class="pal" data-id="logos" aria-label="Use the LOGOS palette, made for deep-dive analysis, monthly chartbooks" title="deep-dive analysis, monthly chartbooks"> <span class="pstrip"><i style="background:#9E2B25"></i><i style="background:#B8B2A7"></i><i style="background:#E8E0D4"></i><i style="background:#2E6E4E"></i></span> <span class="pn">LOGOS</span> </button><button type="button" class="pal" data-id="shilpa" aria-label="Use the SHILPA palette, made for technical packs, procedures" title="technical packs, procedures"> <span class="pstrip"><i style="background:#1B6E8F"></i><i style="background:#C6D5E0"></i><i style="background:#2E6E4E"></i><i style="background:#9E2B25"></i><i style="background:#B54708"></i></span> <span class="pn">SHILPA</span> </button><button type="button" class="pal" data-id="obeya" aria-label="Use the OBEYA palette, made for stand-up boards, site wall prints" title="stand-up boards, site wall prints"> <span class="pstrip"><i style="background:#C2410C"></i><i style="background:#64748B"></i><i style="background:#1F7A4D"></i><i style="background:#B91C1C"></i></span> <span class="pn">OBEYA</span> </button><button type="button" class="pal" data-id="lex" aria-label="Use the LEX palette, made for claims, mediation, correspondence" title="claims, mediation, correspondence"> <span class="pstrip"><i style="background:#7A1F1F"></i><i style="background:#B9B9B9"></i><i style="background:#333333"></i></span> <span class="pn">LEX</span> </button><button type="button" class="pal" data-id="saga" aria-label="Use the SAGA palette, made for weekly digests, bulletins" title="weekly digests, bulletins"> <span class="pstrip"><i style="background:#C0182B"></i><i style="background:#B0B0B0"></i><i style="background:#111111"></i><i style="background:#2E2E2E"></i></span> <span class="pn">SAGA</span> </button><button type="button" class="pal" data-id="sentinel" aria-label="Use the SENTINEL palette, made for live dashboards, control-room screens" title="live dashboards, control-room screens"> <span class="pstrip"><i style="background:#F0B429"></i><i style="background:#5C6B78"></i><i style="background:#9FB0BE"></i><i style="background:#3FB68B"></i><i style="background:#E5534B"></i></span> <span class="pn">SENTINEL</span> </button><button type="button" class="pal" data-id="atlas" aria-label="Use the ATLAS palette, made for route progress, site status maps" title="route progress, site status maps"> <span class="pstrip"><i style="background:#0F766E"></i><i style="background:#B9AE9C"></i><i style="background:#CDC3AE"></i><i style="background:#2E6E4E"></i><i style="background:#C2410C"></i></span> <span class="pn">ATLAS</span> </button><button type="button" class="pal" data-id="basira" aria-label="Use the BASIRA palette, made for photo progress reports, drone updates" title="photo progress reports, drone updates"> <span class="pstrip"><i style="background:#F0B429"></i><i style="background:#8A9096"></i><i style="background:#3A3F44"></i><i style="background:#3FB68B"></i><i style="background:#E5534B"></i></span> <span class="pn">BASIRA</span> </button><button type="button" class="pal" data-id="sutra" aria-label="Use the SUTRA palette, made for briefing notes, position papers" title="briefing notes, position papers"> <span class="pstrip"><i style="background:#1F3864"></i><i style="background:#A9BBD9"></i><i style="background:#8EAADB"></i><i style="background:#2E6E4E"></i><i style="background:#9E2B25"></i></span> <span class="pn">SUTRA</span> </button><button type="button" class="pal" data-id="noroshi" aria-label="Use the NOROSHI palette, made for escalations, flash reports" title="escalations, flash reports"> <span class="pstrip"><i style="background:#D63A2F"></i><i style="background:#94A3B8"></i><i style="background:#E2E8F0"></i><i style="background:#1F7A4D"></i><i style="background:#B45309"></i></span> <span class="pn">NOROSHI</span> </button><button type="button" class="pal" data-id="mizan" aria-label="Use the MIZAN palette, made for cultural projects, personal-brand material" title="cultural projects, personal-brand material"> <span class="pstrip"><i style="background:#C4572E"></i><i style="background:#C9BBA4"></i><i style="background:#DCCFB6"></i><i style="background:#3D5A46"></i><i style="background:#7A3B1E"></i></span> <span class="pn">MIZAN</span> </button><button type="button" class="pal" data-id="evidentia" aria-label="Use the EVIDENTIA palette, made for evidence-led strategy decks, diagnostic readouts" title="evidence-led strategy decks, diagnostic readouts"> <span class="pstrip"><i style="background:#2251FF"></i><i style="background:#A9B4C0"></i><i style="background:#6E7E8E"></i><i style="background:#2E6E4E"></i><i style="background:#9E2B25"></i></span> <span class="pn">EVIDENTIA</span> </button><button type="button" class="pal" data-id="abrid" aria-label="Use the ABRID palette, made for framework decks, portfolio reviews" title="framework decks, portfolio reviews"> <span class="pstrip"><i style="background:#197A56"></i><i style="background:#A7C4B5"></i><i style="background:#C9D2CC"></i><i style="background:#9E2B25"></i></span> <span class="pn">ABRID</span> </button><button type="button" class="pal" data-id="telos" aria-label="Use the TELOS palette, made for results decks, due-diligence readouts" title="results decks, due-diligence readouts"> <span class="pstrip"><i style="background:#C4001A"></i><i style="background:#B5B1AB"></i><i style="background:#8C8880"></i><i style="background:#2E6E4E"></i></span> <span class="pn">TELOS</span> </button> </div> <label class="acc"> <input type="color" id="lg-accent" aria-label="Brand accent colour"> <span><b>Brand accent</b><small id="lg-accent-hex">from the palette</small></span> <button type="button" class="btn2 small quiet" id="lg-accent-reset">Palette colour</button> </label> </div> </section> <section class="grp" data-open="1"> <h2 class="gh"><button type="button" class="gt" aria-expanded="true"><span class="secn">3</span>Pages and text</button></h2> <div class="gb"> <label class="chk"><input type="checkbox" id="lg-menu"> <span>Start with a home menu page</span></label> <ol class="plist" id="lg-pages"></ol> <button type="button" class="btn2 full" id="lg-addpage">Add a page</button> <div class="txt"> <label>Report title <small>wrap a word in *stars* to colour it</small><input type="text" id="lg-title" maxlength="60"></label> <label>Company<input type="text" id="lg-company" maxlength="40"></label> <label>Subtitle<input type="text" id="lg-subtitle" maxlength="80"></label> <label>Footer<input type="text" id="lg-footer" maxlength="90"></label> </div> <div class="logo"> <span class="lbl">Logo</span> <div class="logorow"> <span class="logoprev" id="lg-logoprev"></span> <button type="button" class="btn2 small" id="lg-logo-btn">Upload logo</button> <button type="button" class="btn2 small quiet" id="lg-logo-del" hidden>Remove</button> <input type="file" id="lg-logo" accept="image/png,image/jpeg,image/svg+xml,image/webp" hidden> </div> </div> </div> </section> <section class="grp" data-open="1"> <h2 class="gh"><button type="button" class="gt" aria-expanded="true"><span class="secn">4</span>Cards</button></h2> <div class="gb"> <div class="cstyles" id="lg-cstyles"></div> <div class="lbl">Card colour</div> <div class="seg wide" id="lg-cfill"> <button type="button" data-v="paper">Paper</button> <button type="button" data-v="tint">Tint</button> </div> <div class="lbl">Spacing</div> <div class="seg wide" id="lg-gap"> <button type="button" data-v="8">Tight</button> <button type="button" data-v="14">Regular</button> <button type="button" data-v="22">Airy</button> </div> <label class="rng"><span>Corners <b id="lg-rad-v"></b></span><input type="range" id="lg-rad" min="0" max="20" step="2"></label> <label class="chk"><input type="checkbox" id="lg-shadow"> <span>Soft shadow</span></label> <label class="chk"><input type="checkbox" id="lg-phead"> <span>Page title on every page</span></label> <label class="chk"><input type="checkbox" id="lg-bake"> <span>Card titles drawn in the background</span></label> </div> </section> </aside> <!-- ============================================================ STAGE --> <div class="stage"> <div class="tabsbar"> <div class="ptabs" id="lg-ptabs" role="tablist" aria-label="Pages"></div> <div class="tools2"> <button type="button" class="ib" id="lg-undo" aria-label="Undo" title="Undo (Ctrl+Z)"><svg viewBox="0 0 24 24"><path d="M9 7 4 12l5 5M4 12h11a5 5 0 0 1 0 10h-3"></path></svg></button> <button type="button" class="ib" id="lg-redo" aria-label="Redo" title="Redo (Ctrl+Y)"><svg viewBox="0 0 24 24"><path d="m15 7 5 5-5 5M20 12H9a5 5 0 0 0 0 10h3"></path></svg></button> <button type="button" class="ib tg" id="lg-grid" aria-pressed="true" title="Show the grid"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4zM9.3 4v16M14.7 4v16M4 9.3h16M4 14.7h16"></path></svg></button> <button type="button" class="ib tg" id="lg-ghost" aria-pressed="true" title="Show sample visuals in the preview"><svg viewBox="0 0 24 24"><path d="M5 20V11M11 20V5M17 20v-6M3 20h18"></path></svg></button> </div> </div> <div class="add" id="lg-add" aria-label="Add a card"></div> <div class="canvaswrap" id="lg-wrap" tabindex="0" aria-label="Page canvas. Click a card to select it, drag to move, drag the corner to resize, drag on empty space to draw a card. Arrow keys move, Shift and arrows resize, Delete removes."> <div class="canvas" id="lg-canvas"></div> </div> <p class="capt" id="lg-capt"></p> <div class="below"> <div class="layouts"> <div class="lbl">Start this page from a layout</div> <div class="lays" id="lg-lays"></div> </div> <div class="insp" id="lg-insp"></div> </div> </div> </div> <!-- ============================================================ EXPORT --> <h2 class="sec" id="download"><span class="secn">5</span>Take it to Power BI</h2> <div class="dlmain"> <button type="button" class="dlbtn" id="lg-pbip">Download the Power BI project (.pbip)</button> <div class="dlmeta"><b id="lg-pbipname"></b><span>Every page with its background, page buttons that navigate, placeholder visuals in each card, and your theme.</span></div> </div> <div class="files"> <div class="file"><b>This page as PNG</b><span class="fdesc">Twice the canvas size, sharp on any screen. Format page, Canvas background, Image, Fit.</span><div class="btnrow"><button type="button" class="btn2" id="lg-png">Download PNG</button><button type="button" class="btn2 quiet" id="lg-svg">SVG</button></div></div> <div class="file"><b>Every page (zip)</b><span class="fdesc">One PNG per page, the theme, the positions as CSV and a short read-me.</span><div class="btnrow"><button type="button" class="btn2" id="lg-zip">Download zip</button></div></div> <div class="file"><b>Theme (.json)</b><span class="fdesc">Data colours, fonts and transparent visuals so the background shows through. View, Themes, Browse for themes.</span><div class="btnrow"><button type="button" class="btn2" id="lg-theme">Download theme</button></div></div> <div class="file"><b>Positions</b><span class="fdesc">X, Y, width and height of every card and button, in Power BI pixels. Paste into Format, General, Properties.</span><div class="btnrow"><button type="button" class="btn2" id="lg-copy">Copy table</button><button type="button" class="btn2 quiet" id="lg-csv">CSV</button></div></div> </div> <p class="status" id="lg-status" role="status" aria-live="polite"></p> <div class="postab"> <div class="phead"><h3 class="sub">Where each visual goes on <span id="lg-pos-page"></span></h3><span class="secnote">Power BI pixels at <span id="lg-pos-size"></span>. A visual placed on its slot lines up with the card in the background.</span></div> <div class="tscroll"><table id="lg-pos"></table></div> </div> <div class="notes"> <div class="booknote"> <b>How to use it in Power BI Desktop.</b> The fastest route is the .pbip: unzip it to a short path such as <code>C:\PBI\</code>, double-click the .pbip, and every page opens with its background, the theme and a placeholder visual on each card. Swap each placeholder for your own visual and keep its position. The page buttons already navigate. By hand: <span class="k">Format page</span>, <span class="k">Canvas background</span>, <span class="k">Browse</span>, pick the PNG, set <span class="k">Image fit</span> to <span class="k">Fit</span> and transparency to 0%. Then load the theme (<span class="k">View</span>, <span class="k">Themes</span>, <span class="k">Browse for themes</span>) so the visuals turn transparent, and type each visual's X, Y, width and height from the table above.
+</div> <div class="booknote"> <b>Why the cards live in the background.</b> A shape drawn under every visual is the usual way to give a report a clean card look, and it costs a visual each time: more to load, more to align, more to restyle. A single background image carries every card, line and label at no cost to the report, and the theme switches the visual backgrounds off so the image shows through. When the layout changes, you export one new image instead of moving forty shapes.
+</div> <div class="booknote"> <b>Why a 12 by 12 grid.</b> Cards that share column edges read as one system, so the eye can compare a KPI with the chart under it without hunting. Twelve columns divide into halves, thirds, quarters and sixths, which covers almost every report layout. Change the frame or the canvas size and the cards keep their place on the grid, so the layout follows.
+</div> <div class="booknote"> <b>Privacy.</b> Everything runs in this page. Your logo is read by your browser and never uploaded, the images and the project are built on your machine, and your last layout is kept in this browser only. Related: <a href="https://babarda.com/tools/theme-builder/">Theme Builder</a> for a full brand theme, <a href="https://babarda.com/tools/theme-check/">Theme Check</a> to audit one, and the <a href="https://babarda.com/tools/powerbi-templates/">Power BI project templates</a>.
+</div> </div> </div>  </main> <footer class="sitefoot"> <span>© 2026 Badr Abardazzou</span> <a href="https://babarda.com/about">About</a> </footer> </div> </div>  </body> </html>   <script type="module">
+import * as tk from "./themekit.js";
+
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+const r1 = (n) => Math.round(n * 10) / 10;
+const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+const PRESETS = JSON.parse($("#lg-presets").textContent);
+const COLS = 12, ROWS = 12;
+
+/* ---------------------------------------------------------------- vocab */
+
+const SIZES = {
+  "1280x720": { w: 1280, h: 720, lab: "16:9", note: "default" },
+  "1920x1080": { w: 1920, h: 1080, lab: "16:9", note: "Full HD" },
+  "1920x1280": { w: 1920, h: 1280, lab: "3:2", note: "tall" },
+  "960x720": { w: 960, h: 720, lab: "4:3", note: "classic" },
+};
+const FRAMES = [
+  ["sidebar", "Sidebar"], ["rail", "Icon rail"], ["float", "Floating panel"], ["tabs", "Top tabs"],
+  ["header", "Header band"], ["filters", "Rail + filters"], ["none", "No navigation"],
+];
+const TONES = [["ink", "Deep"], ["brand", "Brand"], ["tint", "Tint"], ["paper", "Paper"]];
+const CSTYLES = [["plain", "Plain"], ["tick", "Tick"], ["band", "Band"], ["outline", "Outline"]];
+
+const ICONS = {
+  home: "M3 11 12 4l9 7M5 10v10h5v-6h4v6h5V10",
+  grid: "M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z",
+  chart: "M5 20V11M11 20V5M17 20v-6M3 20h18",
+  trend: "M3 17l6-6 4 4 8-8M15 7h6v6",
+  coin: "M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM15 8.6c-.6-.9-1.7-1.5-3-1.5-1.8 0-3 1-3 2.3 0 3.1 6 1.8 6 5 0 1.3-1.2 2.4-3 2.4-1.4 0-2.6-.6-3.2-1.6M12 5.6v1.5M12 17v1.4",
+  people: "M9 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5M16 4.5a3.5 3.5 0 0 1 0 6.8M18 14.8c1.8.7 3 2.5 3.5 5.2",
+  pin: "M12 21s-7-6.2-7-11.5a7 7 0 1 1 14 0C19 14.8 12 21 12 21zM12 12a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z",
+  table: "M3 5h18v14H3zM3 10h18M3 15h18M9 5v14",
+  calendar: "M4 6h16v14H4zM4 10h16M8 3v5M16 3v5",
+  alert: "M12 3 2 20h20L12 3zM12 10v4M12 17v.5",
+  box: "M3 7l9-4 9 4v10l-9 4-9-4V7zM3 7l9 4 9-4M12 11v10",
+  target: "M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM12 12h.01",
+  info: "M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 11v6M12 7.5v.5",
+};
+const ICON_ORDER = Object.keys(ICONS);
+const ICON_KEYS = [
+  ["grid", /overview|summary|dashboard|executive/i], ["home", /home|cover|menu|start/i], ["coin", /sale|revenue|financ|cost|budget|profit|money|spend|price|cash/i],
+  ["trend", /trend|progress|perform|growth|forecast|kpi/i], ["people", /people|team|hr\b|staff|resource|customer|client|user|workforce/i],
+  ["pin", /map|region|site|geo|countr|location|store|area/i], ["table", /table|detail|register|list|data|log\b|ledger/i],
+  ["calendar", /schedule|plan|time|calendar|month|week|look/i], ["alert", /risk|issue|alert|hold|incident|safety|quality/i],
+  ["box", /stock|inventor|logist|ship|deliver|supply|order|material|warehouse/i], ["target", /target|goal|objective|okr/i],
+  ["info", /about|help|note|method|info|glossary/i],
+];
+const autoIcon = (n) => (ICON_KEYS.find(([, re]) => re.test(n)) || ["chart"])[0];
+
+const TYPES = {
+  kpi: { label: "KPI", pbi: "card", def: [3, 2], icon: "M4 17V7M8 17l3-10 3 10M9.2 13h3.6M17 7v10M17 12h3" },
+  bar: { label: "Bar chart", pbi: "clusteredColumnChart", def: [6, 5], icon: ICONS.chart },
+  line: { label: "Line chart", pbi: "lineChart", def: [6, 5], icon: "M3 17l5-5 4 3 9-9M3 21h18" },
+  donut: { label: "Donut", pbi: "donutChart", def: [4, 5], icon: "M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM12 3v6" },
+  table: { label: "Table", pbi: "tableEx", def: [6, 5], icon: ICONS.table },
+  slicer: { label: "Slicer", pbi: "slicer", def: [3, 2], icon: "M4 5h16l-6 8v6l-4-2v-4L4 5z" },
+  map: { label: "Map", pbi: "azureMap", def: [6, 6], icon: ICONS.pin },
+  text: { label: "Text", pbi: "textbox", def: [4, 4], icon: "M5 6h14M12 6v13M9 19h6" },
+};
+
+const L = (t, c, r, w, h, title) => ({ type: t, c, r, w, h, title });
+const LAYOUTS = {
+  exec: { name: "Executive", cards: [L("kpi", 0, 0, 3, 2, "Revenue"), L("kpi", 3, 0, 3, 2, "Margin"), L("kpi", 6, 0, 3, 2, "Orders"), L("kpi", 9, 0, 3, 2, "Customers"), L("line", 0, 2, 8, 6, "Monthly trend"), L("donut", 8, 2, 4, 6, "Mix by segment"), L("table", 0, 8, 12, 4, "Top ten items")] },
+  trend: { name: "Trend", cards: [L("kpi", 0, 0, 4, 2, "Actual"), L("kpi", 4, 0, 4, 2, "Plan"), L("kpi", 8, 0, 4, 2, "Variance"), L("line", 0, 2, 12, 6, "Actual vs plan"), L("bar", 0, 8, 6, 4, "By category"), L("bar", 6, 8, 6, 4, "By region")] },
+  map: { name: "Map", cards: [L("kpi", 0, 0, 3, 3, "Sites"), L("kpi", 0, 3, 3, 3, "Active"), L("kpi", 0, 6, 3, 3, "At risk"), L("kpi", 0, 9, 3, 3, "Closed"), L("map", 3, 0, 6, 12, "Where"), L("bar", 9, 0, 3, 6, "Top sites"), L("donut", 9, 6, 3, 6, "Status")] },
+  detail: { name: "Detail", cards: [L("slicer", 0, 0, 3, 2, "Period"), L("slicer", 3, 0, 3, 2, "Region"), L("slicer", 6, 0, 3, 2, "Category"), L("kpi", 9, 0, 3, 2, "Rows"), L("table", 0, 2, 12, 10, "Detail")] },
+  quad: { name: "Two by two", cards: [L("bar", 0, 0, 6, 6, "By month"), L("line", 6, 0, 6, 6, "Run rate"), L("donut", 0, 6, 6, 6, "Share"), L("table", 6, 6, 6, 6, "Breakdown")] },
+  story: { name: "Narrative", cards: [L("text", 0, 0, 4, 12, "What changed"), L("line", 4, 0, 8, 7, "The trend"), L("kpi", 4, 7, 4, 5, "Headline"), L("bar", 8, 7, 4, 5, "Drivers")] },
+  side: { name: "Filter side", cards: [L("slicer", 0, 0, 3, 2, "Period"), L("slicer", 0, 2, 3, 2, "Region"), L("slicer", 0, 4, 3, 2, "Owner"), L("text", 0, 6, 3, 6, "Notes"), L("kpi", 3, 0, 3, 3, "Total"), L("kpi", 6, 0, 3, 3, "Open"), L("kpi", 9, 0, 3, 3, "Late"), L("bar", 3, 3, 9, 9, "By week")] },
+  blank: { name: "Blank", cards: [] },
+};
+
+let uid = 1;
+const withIds = (cards) => cards.map((c) => ({ ...c, id: "c" + uid++ }));
+const page = (name, lay) => ({ name, icon: autoIcon(name), layout: lay, cards: withIds(LAYOUTS[lay].cards) });
+
+const DEFAULT = () => ({
+  v: 1, size: "1280x720", frame: "sidebar", preset: "kata", accent: null, mode: "light", navTone: "ink", activeStyle: "fill",
+  title: "Operations *Review*", company: "Northwind", subtitle: "Monthly performance pack", footer: "Source: ERP extract, refreshed every morning",
+  logo: null, menu: true, pageHeader: true, bake: true, cardStyle: "tick", cardFill: "paper", radius: 10, shadow: true, gap: 14,
+  pages: [page("Overview", "exec"), page("Performance", "trend"), page("Regions", "map"), page("Detail", "detail")], cur: 0,
+});
+
+let S = DEFAULT();
+let sel = null, tool = "bar", showGrid = true, ghosts = true, drag = null, undo = [], redo = [];
+
+/* ---------------------------------------------------------------- persistence */
+
+const KEY = "babarda-pbi-layout-v1";
+function load() {
+  try {
+    const raw = localStorage.getItem(KEY);
+    if (!raw) return;
+    const o = JSON.parse(raw);
+    if (!o || o.v !== 1 || !Array.isArray(o.pages) || !o.pages.length) return;
+    S = { ...DEFAULT(), ...o };
+    for (const p of S.pages) for (const c of p.cards) { const n = +String(c.id).slice(1); if (n >= uid) uid = n + 1; }
+  } catch (e) { /* storage blocked */ }
+}
+let saveT = 0;
+function save() { clearTimeout(saveT); saveT = setTimeout(() => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) { /* full or blocked */ } }, 300); }
+function snap() { undo.push(JSON.stringify(S)); if (undo.length > 60) undo.shift(); redo = []; }
+function restore(json) { S = JSON.parse(json); sel = null; renderAll(); }
+
+/* ---------------------------------------------------------------- palette */
+
+const presetOf = () => PRESETS.find((p) => p.id === S.preset) || PRESETS[0];
+function lift(c, against, min) {
+  let out = c; const up = tk.luminance(against) < 0.4;
+  for (let k = 0.08; k <= 0.9 && tk.contrast(out, against) < min; k += 0.06) out = tk.mix(c, up ? k : -k);
+  return out;
+}
+const bestInk = (bg, dark, light) => (tk.contrast(light, bg) >= tk.contrast(dark, bg) ? light : dark);
+
+function palette() {
+  const b = tk.completeBrand(presetOf().brand);
+  const a = S.accent || b.colors[0];
+  const dark = S.mode === "dark";
+  const p = dark
+    ? { bg: tk.mix(a, -0.88), card: tk.mix(a, -0.8), tint: tk.mix(a, -0.7), ink: tk.mix(a, 0.95), body: tk.mix(a, 0.75), faint: tk.mix(a, 0.5), hair: tk.mix(a, -0.6), grid: tk.mix(a, -0.7) }
+    : { bg: tk.mix(a, 0.935), card: "#FFFFFF", tint: tk.mix(a, 0.9), ink: b.ink, body: b.body, faint: tk.mix(b.body, 0.45), hair: tk.mix(a, 0.8), grid: tk.mix(a, 0.9) };
+  if (S.cardFill === "tint") p.cardFill = dark ? tk.mix(a, -0.74) : tk.mix(a, 0.965); else p.cardFill = p.card;
+  p.acc = lift(a, p.cardFill, 2.6);
+  const series = (S.accent ? [S.accent, ...b.colors.filter((c) => tk.deltaE(c, S.accent) > 12)] : b.colors).slice(0, 8);
+  p.series = series.map((c) => lift(c, p.cardFill, 1.8));
+  p.brand = b;
+  const t = S.navTone;
+  p.nav = t === "ink" ? (dark ? tk.mix(a, -0.94) : tk.mix(a, -0.78)) : t === "brand" ? a : t === "tint" ? (dark ? tk.mix(a, -0.72) : tk.mix(a, 0.84)) : p.card;
+  p.navInk = bestInk(p.nav, dark ? tk.mix(a, -0.9) : b.ink, "#FFFFFF");
+  p.navOnDark = p.navInk === "#FFFFFF";
+  p.navAct = p.navOnDark ? "rgba(255,255,255,0.14)" : (t === "paper" ? p.tint : tk.mix(a, dark ? -0.55 : 0.72));
+  p.navBar = t === "brand" ? p.navInk : lift(a, p.nav, 3);
+  p.navAccent = lift(a, p.nav, 3);
+  p.navLine = t === "paper" ? p.hair : null;
+  const ff = (f) => {
+    const lf = String(f).toLowerCase();
+    if (/^(segoe ui|segoe ui semibold|segoe ui light|aptos|aptos display|calibri|calibri light|arial|arial narrow|georgia|cambria|verdana|tahoma|trebuchet ms|century gothic|franklin gothic book|franklin gothic medium|garamond|gill sans mt|candara|corbel|constantia|palatino linotype|book antiqua|times new roman)$/.test(lf)) return f;
+    if (/garamond|serif|times|georgia|playfair|merri|lora|cambria|fraunces/.test(lf)) return "Georgia";
+    return "Segoe UI";
+  };
+  p.fh = ff(b.fontHeading); p.fb = ff(b.fontBody);
+  p.fhs = `'${p.fh}', 'Segoe UI', Arial, sans-serif`; p.fbs = `'${p.fb}', 'Segoe UI', Arial, sans-serif`;
+  p.shadow = dark ? 0.42 : 0.1;
+  return p;
+}
+
+/* ---------------------------------------------------------------- geometry */
+
+const sizeOf = () => SIZES[S.size] || SIZES["1280x720"];
+const plainTitle = () => S.title.replace(/\*/g, "");
+const pageCount = () => S.pages.length + (S.menu ? 1 : 0);
+// page index: -1 is the home menu, 0..n-1 are content pages
+function geom(pi, frameOverride) {
+  const { w: W, h: H } = sizeOf(); const s = H / 720;
+  const f = pi === -1 ? "menu" : frameOverride || S.frame;
+  let nav = null, filt = null, ct = { x: 0, y: 0, w: W, h: H };
+  if (f === "sidebar") { nav = { k: "side", x: 0, y: 0, w: 204 * s, h: H }; ct = { x: nav.w, y: 0, w: W - nav.w, h: H }; }
+  if (f === "rail") { nav = { k: "rail", x: 0, y: 0, w: 72 * s, h: H }; ct = { x: nav.w, y: 0, w: W - nav.w, h: H }; }
+  if (f === "float") { const m = 14 * s; nav = { k: "float", x: m, y: m, w: 188 * s, h: H - 2 * m }; ct = { x: nav.x + nav.w, y: 0, w: W - nav.x - nav.w, h: H }; }
+  if (f === "tabs") { nav = { k: "tabs", x: 0, y: 0, w: W, h: 54 * s }; ct = { x: 0, y: nav.h, w: W, h: H - nav.h }; }
+  if (f === "header") { nav = { k: "header", x: 0, y: 0, w: W, h: 88 * s }; ct = { x: 0, y: nav.h, w: W, h: H - nav.h }; }
+  if (f === "filters") { nav = { k: "rail", x: 0, y: 0, w: 72 * s, h: H }; filt = { x: nav.w, y: 0, w: 206 * s, h: H }; ct = { x: nav.w + filt.w, y: 0, w: W - nav.w - filt.w, h: H }; }
+  const m = 22 * s, gap = S.gap * s;
+  const head = S.pageHeader && f !== "menu" ? 54 * s : 0;
+  const foot = S.footer && f !== "menu" ? 24 * s : 0;
+  const gx = ct.x + m, gy = ct.y + (head ? 28 * s + head : m), gw = ct.w - 2 * m, gh = ct.y + ct.h - gy - (foot ? foot + 6 * s : m);
+  const colW = (gw - (COLS - 1) * gap) / COLS, rowH = (gh - (ROWS - 1) * gap) / ROWS;
+  return { W, H, s, f, nav, filt, ct, m, gap, head, foot, gx, gy, gw, gh, colW, rowH };
+}
+function rectOf(c, g) {
+  return { x: g.gx + c.c * (g.colW + g.gap), y: g.gy + c.r * (g.rowH + g.gap), w: c.w * g.colW + (c.w - 1) * g.gap, h: c.h * g.rowH + (c.h - 1) * g.gap };
+}
+const titled = (c) => S.bake && c.title && c.type !== "text";
+function slotOf(c, g) {
+  const r = rectOf(c, g), s = g.s, pad = 8 * s;
+  const top = titled(c) ? (S.cardStyle === "band" ? 36 * s : 32 * s) : pad;
+  return { x: r.x + pad, y: r.y + top, w: r.w - 2 * pad, h: Math.max(10, r.h - top - pad) };
+}
+
+const tw = (str, size) => String(str).length * size * 0.55;
+
+/* nav zones: one per target page, in the order they are drawn */
+function navItems(pi, g, frameOverride) {
+  const items = [], s = g.s, list = [];
+  if (S.menu) list.push({ to: -1, name: "Home", icon: "home" });
+  S.pages.forEach((p, i) => list.push({ to: i, name: p.name, icon: p.icon }));
+  const n = g.nav;
+  if (!n) return items;
+  if (n.k === "side" || n.k === "float") {
+    const x = n.x + 12 * s, w = n.w - 24 * s; let y = n.y + 96 * s;
+    for (const it of list) { items.push({ ...it, x, y, w, h: 38 * s }); y += 42 * s; }
+  } else if (n.k === "rail") {
+    const size = 46 * s, x = n.x + (n.w - size) / 2; let y = n.y + 86 * s;
+    for (const it of list) { items.push({ ...it, x, y, w: size, h: size }); y += 54 * s; }
+  } else if (n.k === "tabs") {
+    let x = n.x + 24 * s + 30 * s + tw(plainTitle(), 15 * s) + 34 * s; const h = 34 * s, y = n.y + (n.h - h) / 2;
+    for (const it of list) { const w = tw(it.name, 13 * s) + 30 * s; items.push({ ...it, x, y, w, h }); x += w + 4 * s; }
+  } else if (n.k === "header") {
+    const h = 32 * s, y = n.y + n.h - h - 14 * s; const ws = list.map((it) => tw(it.name, 12.5 * s) + 28 * s);
+    let x = n.x + n.w - 24 * s - ws.reduce((a, b) => a + b + 6 * s, -6 * s);
+    list.forEach((it, i) => { items.push({ ...it, x, y, w: ws[i], h }); x += ws[i] + 6 * s; });
+  }
+  return items;
+}
+
+/* menu tiles on the home page */
+function menuTiles(g) {
+  const s = g.s, left = g.W * 0.4, pad = 52 * s, cols = S.pages.length > 4 ? 2 : 1;
+  const x0 = left + pad, w = g.W - left - 2 * pad, y0 = 116 * s, gapT = 14 * s;
+  const rows = Math.ceil(S.pages.length / cols);
+  const h = Math.min(96 * s, (g.H - y0 - 64 * s - (rows - 1) * gapT) / Math.max(1, rows));
+  const tw2 = (w - (cols - 1) * gapT) / cols;
+  return S.pages.map((p, i) => ({ to: i, name: p.name, icon: p.icon, x: x0 + (i % cols) * (tw2 + gapT), y: y0 + Math.floor(i / cols) * (h + gapT), w: tw2, h }));
+}
+
+/* ---------------------------------------------------------------- svg */
+
+const T = (x, y, str, o = {}) => `<text x="${r1(x)}" y="${r1(y)}" font-family="${esc(o.ff || "'Segoe UI', Arial, sans-serif")}" font-size="${r1(o.size || 12)}"${o.weight ? ` font-weight="${o.weight}"` : ""} fill="${o.fill || "#000"}"${o.anchor ? ` text-anchor="${o.anchor}"` : ""}${o.op != null ? ` fill-opacity="${o.op}"` : ""}${o.ls ? ` letter-spacing="${o.ls}"` : ""}>${o.raw ? str : esc(str)}</text>`;
+const R = (x, y, w, h, rx, fill, extra = "") => `<rect x="${r1(x)}" y="${r1(y)}" width="${r1(Math.max(0, w))}" height="${r1(Math.max(0, h))}"${rx ? ` rx="${r1(rx)}"` : ""} fill="${fill}"${extra}/>`;
+const icon = (name, x, y, size, color, sw = 1.8) => `<path d="${ICONS[name] || ICONS.chart}" transform="translate(${r1(x)} ${r1(y)}) scale(${r1(size / 24 * 100) / 100})" fill="none" stroke="${color}" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round"/>`;
+function titleSpans(str, accent) {
+  return str.split(/(\*[^*]+\*)/).filter(Boolean).map((part) => part.startsWith("*") && part.endsWith("*") ? `<tspan fill="${accent}">${esc(part.slice(1, -1))}</tspan>` : esc(part)).join("");
+}
+function fit(str, size, maxW) { let t = String(str); if (tw(t, size) <= maxW) return t; while (t.length > 1 && tw(t + "...", size) > maxW) t = t.slice(0, -1); return t + "..."; }
+
+function logoMark(x, y, size, p, onDark) {
+  if (S.logo) return `<image href="${S.logo}" x="${r1(x)}" y="${r1(y)}" width="${r1(size)}" height="${r1(size)}" preserveAspectRatio="xMidYMid meet"/>`;
+  const fill = onDark ? p.navAccent : p.acc, letter = (S.company || plainTitle() || "R").trim().charAt(0).toUpperCase();
+  return R(x, y, size, size, size * 0.26, fill) + T(x + size / 2, y + size * 0.69, letter, { size: size * 0.52, weight: 700, fill: bestInk(fill, "#101B18", "#FFFFFF"), anchor: "middle", ff: p.fhs });
+}
+
+function navSvg(pi, g, p) {
+  const n = g.nav; if (!n) return "";
+  const s = g.s, items = navItems(pi, g), out = [];
+  const muted = p.navOnDark ? 0.72 : 0.7;
+  if (n.k === "float") out.push(R(n.x, n.y, n.w, n.h, 16 * s, p.nav, S.shadow ? ` filter="url(#sh)"` : ""));
+  else out.push(R(n.x, n.y, n.w, n.h, 0, p.nav));
+  if (p.navLine) {
+    if (n.k === "tabs" || n.k === "header") out.push(R(n.x, n.y + n.h - 1 * s, n.w, 1 * s, 0, p.navLine));
+    else if (n.k !== "float") out.push(R(n.x + n.w - 1 * s, n.y, 1 * s, n.h, 0, p.navLine));
+    else out.push(`<rect x="${r1(n.x)}" y="${r1(n.y)}" width="${r1(n.w)}" height="${r1(n.h)}" rx="${r1(16 * s)}" fill="none" stroke="${p.navLine}" stroke-width="${r1(s)}"/>`);
+  }
+  if (n.k === "side" || n.k === "float") {
+    const lx = n.x + 18 * s, ly = n.y + 26 * s;
+    out.push(logoMark(lx, ly, 34 * s, p, p.navOnDark));
+    out.push(T(lx + 44 * s, ly + 14 * s, fit(S.company || "Company", 13 * s, n.w - 72 * s), { size: 13 * s, weight: 700, fill: p.navInk, ff: p.fhs }));
+    out.push(T(lx + 44 * s, ly + 30 * s, fit(plainTitle(), 10.5 * s, n.w - 72 * s), { size: 10.5 * s, fill: p.navInk, op: muted, ff: p.fbs }));
+    out.push(T(n.x + 22 * s, n.y + 84 * s, "PAGES", { size: 9 * s, weight: 600, fill: p.navInk, op: 0.5, ls: 1.4 * s, ff: p.fbs }));
+    for (const it of items) {
+      const on = it.to === pi;
+      if (on && S.activeStyle === "fill") out.push(R(it.x, it.y, it.w, it.h, 9 * s, p.navAct));
+      if (on && S.activeStyle === "bar") out.push(R(n.x + (n.k === "float" ? 6 * s : 0), it.y + 7 * s, 3.5 * s, it.h - 14 * s, 2 * s, p.navBar));
+      out.push(`<g opacity="${on ? 1 : muted}">` + icon(it.icon, it.x + 10 * s, it.y + it.h / 2 - 9 * s, 18 * s, p.navInk) + T(it.x + 38 * s, it.y + it.h / 2 + 4.6 * s, fit(it.name, 13 * s, it.w - 46 * s), { size: 13 * s, weight: on ? 700 : 500, fill: p.navInk, ff: p.fbs }) + "</g>");
+    }
+    if (S.footer || S.subtitle) out.push(T(n.x + 22 * s, n.y + n.h - 22 * s, fit(S.subtitle || "", 10 * s, n.w - 40 * s), { size: 10 * s, fill: p.navInk, op: 0.55, ff: p.fbs }));
+  } else if (n.k === "rail") {
+    out.push(logoMark(n.x + (n.w - 36 * s) / 2, n.y + 22 * s, 36 * s, p, p.navOnDark));
+    out.push(R(n.x + 20 * s, n.y + 72 * s, n.w - 40 * s, 1 * s, 0, p.navInk, ` fill-opacity="0.18"`));
+    for (const it of items) {
+      const on = it.to === pi;
+      if (on && S.activeStyle === "fill") out.push(R(it.x, it.y, it.w, it.h, 12 * s, p.navAct));
+      if (on && S.activeStyle === "bar") out.push(R(n.x, it.y + 9 * s, 3.5 * s, it.h - 18 * s, 2 * s, p.navBar));
+      out.push(`<g opacity="${on ? 1 : muted}">` + icon(it.icon, it.x + it.w / 2 - 10 * s, it.y + it.h / 2 - 10 * s, 20 * s, p.navInk) + "</g>");
+    }
+  } else if (n.k === "tabs") {
+    out.push(logoMark(n.x + 24 * s, n.y + (n.h - 26 * s) / 2, 26 * s, p, p.navOnDark));
+    out.push(`<text x="${r1(n.x + 60 * s)}" y="${r1(n.y + n.h / 2 + 5.5 * s)}" font-family="${esc(p.fhs)}" font-size="${r1(15 * s)}" font-weight="700" fill="${p.navInk}">${titleSpans(S.title, p.navAccent)}</text>`);
+    for (const it of items) {
+      const on = it.to === pi;
+      if (on && S.activeStyle === "fill") out.push(R(it.x, it.y, it.w, it.h, it.h / 2, p.navAct));
+      if (on && S.activeStyle === "bar") out.push(R(it.x + 10 * s, n.y + n.h - 3.5 * s, it.w - 20 * s, 3.5 * s, 1.5 * s, p.navBar));
+      out.push(T(it.x + it.w / 2, it.y + it.h / 2 + 4.6 * s, it.name, { size: 13 * s, weight: on ? 700 : 500, fill: p.navInk, anchor: "middle", op: on ? 1 : muted, ff: p.fbs }));
+    }
+    if (S.company) out.push(T(n.x + n.w - 24 * s, n.y + n.h / 2 + 4 * s, S.company, { size: 11 * s, fill: p.navInk, op: 0.6, anchor: "end", ff: p.fbs }));
+  } else if (n.k === "header") {
+    out.push(logoMark(n.x + 26 * s, n.y + 22 * s, 44 * s, p, p.navOnDark));
+    out.push(`<text x="${r1(n.x + 84 * s)}" y="${r1(n.y + 44 * s)}" font-family="${esc(p.fhs)}" font-size="${r1(22 * s)}" font-weight="700" fill="${p.navInk}">${titleSpans(S.title, p.navAccent)}</text>`);
+    out.push(T(n.x + 84 * s, n.y + 64 * s, [S.company, S.subtitle].filter(Boolean).join("  ·  "), { size: 11.5 * s, fill: p.navInk, op: 0.65, ff: p.fbs }));
+    for (const it of items) {
+      const on = it.to === pi;
+      if (on && S.activeStyle === "fill") out.push(R(it.x, it.y, it.w, it.h, it.h / 2, p.navAct));
+      else if (!on || S.activeStyle === "bar") out.push(`<rect x="${r1(it.x)}" y="${r1(it.y)}" width="${r1(it.w)}" height="${r1(it.h)}" rx="${r1(it.h / 2)}" fill="none" stroke="${p.navInk}" stroke-opacity="${on ? 0.9 : 0.25}" stroke-width="${r1((on ? 1.6 : 1) * s)}"/>`);
+      out.push(T(it.x + it.w / 2, it.y + it.h / 2 + 4.4 * s, it.name, { size: 12.5 * s, weight: on ? 700 : 500, fill: p.navInk, anchor: "middle", op: on ? 1 : muted, ff: p.fbs }));
+    }
+  }
+  if (g.filt) {
+    const f = g.filt; out.push(R(f.x, f.y, f.w, f.h, 0, p.card)); out.push(R(f.x + f.w - 1 * s, f.y, 1 * s, f.h, 0, p.hair));
+    out.push(T(f.x + 20 * s, f.y + 40 * s, "Filters", { size: 16 * s, weight: 700, fill: p.ink, ff: p.fhs }));
+    out.push(T(f.x + 20 * s, f.y + 58 * s, "Apply to every visual on the page", { size: 10 * s, fill: p.faint, ff: p.fbs }));
+    filterSlots(g).forEach((z) => {
+      out.push(T(z.x, z.y - 7 * s, z.name.toUpperCase(), { size: 9 * s, weight: 600, fill: p.faint, ls: 1.1 * s, ff: p.fbs }));
+      out.push(`<rect x="${r1(z.x)}" y="${r1(z.y)}" width="${r1(z.w)}" height="${r1(z.h)}" rx="${r1(7 * s)}" fill="${p.bg}" stroke="${p.hair}" stroke-width="${r1(s)}"/>`);
+      out.push(`<path d="M${r1(z.x + z.w - 22 * s)} ${r1(z.y + z.h / 2 - 2 * s)} l${r1(5 * s)} ${r1(5 * s)} l${r1(5 * s)} ${r1(-5 * s)}" fill="none" stroke="${p.faint}" stroke-width="${r1(1.5 * s)}" stroke-linecap="round"/>`);
+    });
+  }
+  return out.join("");
+}
+function filterSlots(g) {
+  if (!g.filt) return [];
+  const s = g.s, f = g.filt, names = ["Period", "Region", "Category", "Owner", "Status"];
+  return names.map((name, i) => ({ name, x: f.x + 20 * s, y: f.y + 104 * s + i * 66 * s, w: f.w - 40 * s, h: 34 * s }));
+}
+
+function ghostSvg(c, g, p) {
+  const z = slotOf(c, g), s = g.s, out = [], col = p.series, op = 0.42;
+  const { x, y, w, h } = z;
+  if (w < 12 || h < 10) return "";
+  if (c.type === "kpi") {
+    const big = Math.min(h * 0.5, w * 0.22, 34 * s);
+    out.push(T(x + 4 * s, y + Math.min(h * 0.62, big * 1.15), "1,284", { size: big, weight: 700, fill: p.ink, op: 0.22, ff: p.fhs }));
+    if (h > 50 * s) out.push(`<path d="M${r1(x + 4 * s)} ${r1(y + h - 8 * s)} ${[0.1, 0.25, 0.2, 0.45, 0.38, 0.6, 0.55, 0.8, 1].map((v, i) => `L${r1(x + 4 * s + (w - 8 * s) * (i + 1) / 9)} ${r1(y + h - 8 * s - v * Math.min(22 * s, h * 0.25))}`).join(" ")}" fill="none" stroke="${p.acc}" stroke-opacity="${op}" stroke-width="${r1(2 * s)}" stroke-linecap="round"/>`);
+    else out.push(R(x + 4 * s, y + h - 9 * s, Math.min(70 * s, w * 0.5), 5 * s, 2.5 * s, p.acc, ` fill-opacity="${op}"`));
+  } else if (c.type === "bar") {
+    const vals = [0.55, 0.8, 0.62, 0.92, 0.7, 0.48, 0.76, 0.66, 0.85, 0.58, 0.72, 0.9];
+    const n = clamp(Math.floor(w / (26 * s)), 3, 12), bw = (w - 8 * s) / n;
+    for (let i = 0; i < n; i++) { const bh = (h - 12 * s) * vals[i]; out.push(R(x + 4 * s + i * bw + bw * 0.18, y + h - 4 * s - bh, bw * 0.64, bh, 2 * s, col[i % 2 === 0 ? 0 : 1] || p.acc, ` fill-opacity="${op}"`)); }
+    out.push(R(x + 4 * s, y + h - 4 * s, w - 8 * s, 1 * s, 0, p.ink, ` fill-opacity="0.18"`));
+  } else if (c.type === "line") {
+    for (let k = 0; k < 4; k++) out.push(R(x + 4 * s, y + 6 * s + k * (h - 12 * s) / 3, w - 8 * s, 0.8 * s, 0, p.ink, ` fill-opacity="0.08"`));
+    const series = [[0.3, 0.42, 0.38, 0.55, 0.5, 0.66, 0.62, 0.78, 0.74, 0.88], [0.2, 0.25, 0.32, 0.3, 0.4, 0.42, 0.5, 0.48, 0.58, 0.6]];
+    series.forEach((v, j) => out.push(`<polyline points="${v.map((t, i) => `${r1(x + 4 * s + (w - 8 * s) * i / (v.length - 1))},${r1(y + h - 6 * s - t * (h - 14 * s))}`).join(" ")}" fill="none" stroke="${col[j] || p.acc}" stroke-opacity="${j ? op * 0.8 : op + 0.15}" stroke-width="${r1(2.2 * s)}" stroke-linejoin="round" stroke-linecap="round"/>`));
+  } else if (c.type === "donut") {
+    const rr = Math.min(w, h) * 0.38, cx = x + w / 2, cy = y + h / 2, sw = rr * 0.42, segs = [0.42, 0.26, 0.18, 0.14];
+    let a0 = -Math.PI / 2; const circ = 2 * Math.PI;
+    segs.forEach((v, i) => { const a1 = a0 + v * circ - 0.04; const x0 = cx + rr * Math.cos(a0), y0 = cy + rr * Math.sin(a0), x1 = cx + rr * Math.cos(a1), y1 = cy + rr * Math.sin(a1); out.push(`<path d="M${r1(x0)} ${r1(y0)} A${r1(rr)} ${r1(rr)} 0 ${v > 0.5 ? 1 : 0} 1 ${r1(x1)} ${r1(y1)}" fill="none" stroke="${col[i] || p.acc}" stroke-opacity="${op}" stroke-width="${r1(sw)}"/>`); a0 = a1 + 0.04; });
+  } else if (c.type === "table") {
+    const rh = clamp(22 * s, 14 * s, h / 4), n = Math.floor(h / rh);
+    out.push(R(x, y, w, rh, 3 * s, p.acc, ` fill-opacity="0.14"`));
+    for (let i = 1; i < n; i++) { out.push(R(x, y + i * rh + rh - 0.8 * s, w, 0.8 * s, 0, p.ink, ` fill-opacity="0.1"`)); [0.32, 0.18, 0.14].forEach((f2, k) => out.push(R(x + 8 * s + [0, 0.42, 0.7][k] * w, y + i * rh + rh * 0.38, w * f2 * (0.6 + ((i * 7 + k * 3) % 5) / 10), 4.5 * s, 2 * s, p.ink, ` fill-opacity="0.16"`))); }
+  } else if (c.type === "slicer") {
+    const bh = Math.min(30 * s, h - 4 * s), by = y + (h - bh) / 2;
+    out.push(`<rect x="${r1(x)}" y="${r1(by)}" width="${r1(w)}" height="${r1(bh)}" rx="${r1(6 * s)}" fill="${p.bg}" stroke="${p.hair}" stroke-width="${r1(s)}"/>`);
+    out.push(R(x + 10 * s, by + bh / 2 - 2.5 * s, Math.min(w * 0.45, 80 * s), 5 * s, 2.5 * s, p.ink, ` fill-opacity="0.2"`));
+    out.push(`<path d="M${r1(x + w - 20 * s)} ${r1(by + bh / 2 - 2 * s)} l${r1(4.5 * s)} ${r1(4.5 * s)} l${r1(4.5 * s)} ${r1(-4.5 * s)}" fill="none" stroke="${p.faint}" stroke-width="${r1(1.5 * s)}" stroke-linecap="round"/>`);
+  } else if (c.type === "map") {
+    out.push(R(x, y, w, h, 6 * s, p.acc, ` fill-opacity="0.06"`));
+    const blobs = [[0.12, 0.2, 0.3, 0.32], [0.48, 0.12, 0.36, 0.4], [0.2, 0.58, 0.28, 0.3], [0.58, 0.6, 0.3, 0.3]];
+    blobs.forEach(([bx, by, bw, bh]) => out.push(`<ellipse cx="${r1(x + (bx + bw / 2) * w)}" cy="${r1(y + (by + bh / 2) * h)}" rx="${r1(bw * w / 2)}" ry="${r1(bh * h / 2)}" fill="${p.ink}" fill-opacity="0.07"/>`));
+    [[0.22, 0.3, 1], [0.6, 0.28, 0.7], [0.7, 0.42, 1.2], [0.32, 0.7, 0.8], [0.72, 0.74, 0.6], [0.5, 0.5, 0.5]].forEach(([dx, dy, k]) => out.push(`<circle cx="${r1(x + dx * w)}" cy="${r1(y + dy * h)}" r="${r1(Math.min(w, h) * 0.05 * k)}" fill="${p.acc}" fill-opacity="${op + 0.1}"/>`));
+  } else if (c.type === "text") {
+    const lh = 13 * s; let yy = y + (titled(c) ? 0 : 10 * s);
+    out.push(T(x + 4 * s, yy + 8 * s, c.title || "Text", { size: 15 * s, weight: 700, fill: p.ink, op: 0.75, ff: p.fhs }));
+    yy += 24 * s;
+    for (let i = 0; yy + lh < y + h; i++, yy += lh) out.push(R(x + 4 * s, yy, (w - 8 * s) * [1, 0.94, 0.98, 0.7, 0, 1, 0.9, 0.96, 0.6][i % 9], 5 * s, 2.5 * s, p.ink, ` fill-opacity="0.13"`));
+  }
+  return `<g pointer-events="none">${out.join("")}</g>`;
+}
+
+function cardSvg(c, g, p) {
+  const r = rectOf(c, g), s = g.s, rad = S.radius * s, out = [];
+  if (S.cardStyle === "outline") out.push(`<rect x="${r1(r.x)}" y="${r1(r.y)}" width="${r1(r.w)}" height="${r1(r.h)}" rx="${r1(rad)}" fill="${p.cardFill}" stroke="${p.hair}" stroke-width="${r1(1.2 * s)}"/>`);
+  else out.push(R(r.x, r.y, r.w, r.h, rad, p.cardFill, S.shadow ? ` filter="url(#sh)"` : ""));
+  if (titled(c)) {
+    const fs = 12.5 * s;
+    if (S.cardStyle === "band") {
+      const bh = 30 * s, rr = Math.min(rad, bh / 2);
+      out.push(`<path d="M${r1(r.x)} ${r1(r.y + bh)} V${r1(r.y + rr)} Q${r1(r.x)} ${r1(r.y)} ${r1(r.x + rr)} ${r1(r.y)} H${r1(r.x + r.w - rr)} Q${r1(r.x + r.w)} ${r1(r.y)} ${r1(r.x + r.w)} ${r1(r.y + rr)} V${r1(r.y + bh)} Z" fill="${p.tint}"/>`);
+      out.push(T(r.x + 12 * s, r.y + 19.5 * s, fit(c.title, fs, r.w - 24 * s), { size: fs, weight: 700, fill: p.ink, ff: p.fhs }));
+    } else if (S.cardStyle === "tick") {
+      out.push(R(r.x + 12 * s, r.y + 11 * s, 3.5 * s, 14 * s, 1.5 * s, p.acc));
+      out.push(T(r.x + 22 * s, r.y + 22.5 * s, fit(c.title, fs, r.w - 34 * s), { size: fs, weight: 700, fill: p.ink, ff: p.fhs }));
+    } else out.push(T(r.x + 12 * s, r.y + 22.5 * s, fit(c.title, fs, r.w - 24 * s), { size: fs, weight: 700, fill: p.ink, ff: p.fhs }));
+  }
+  return out.join("");
+}
+
+function menuSvg(g, p, interactive) {
+  const s = g.s, W = g.W, H = g.H, left = W * 0.4, out = [];
+  out.push(R(0, 0, left, H, 0, p.nav));
+  out.push(`<circle cx="${r1(left * 0.92)}" cy="${r1(H * 0.98)}" r="${r1(H * 0.42)}" fill="${p.navInk}" fill-opacity="0.05"/><circle cx="${r1(left * 0.92)}" cy="${r1(H * 0.98)}" r="${r1(H * 0.28)}" fill="${p.navInk}" fill-opacity="0.05"/>`);
+  out.push(logoMark(52 * s, 52 * s, 40 * s, p, p.navOnDark));
+  out.push(T(104 * s, 78 * s, S.company || "", { size: 15 * s, weight: 700, fill: p.navInk, ff: p.fhs }));
+  const words = S.title.split(/\s+/), lines = [""], maxW = left - 104 * s, fs = 40 * s;
+  for (const wd of words) { const tryL = (lines[lines.length - 1] + " " + wd).trim(); if (tw(tryL.replace(/\*/g, ""), fs) > maxW && lines[lines.length - 1]) lines.push(wd); else lines[lines.length - 1] = tryL; }
+  const ty = H * 0.46 - (lines.length - 1) * fs * 0.6;
+  out.push(R(52 * s, ty - fs * 1.35, 44 * s, 4 * s, 2 * s, p.navAccent));
+  lines.forEach((ln, i) => out.push(`<text x="${r1(52 * s)}" y="${r1(ty + i * fs * 1.14)}" font-family="${esc(p.fhs)}" font-size="${r1(fs)}" font-weight="700" fill="${p.navInk}" letter-spacing="${r1(-0.6 * s)}">${titleSpans(ln.replace(/^(\*?[^*]*\*)$/, "$1"), p.navAccent)}</text>`));
+  if (S.subtitle) out.push(T(52 * s, ty + (lines.length - 1) * fs * 1.14 + 36 * s, fit(S.subtitle, 15 * s, maxW), { size: 15 * s, fill: p.navInk, op: 0.75, ff: p.fbs }));
+  if (S.footer) out.push(T(52 * s, H - 44 * s, fit(S.footer, 11 * s, maxW), { size: 11 * s, fill: p.navInk, op: 0.55, ff: p.fbs }));
+  out.push(R(left, 0, W - left, H, 0, p.bg));
+  const tiles = menuTiles(g);
+  out.push(T(tiles.length ? tiles[0].x : left + 52 * s, 84 * s, "CONTENTS", { size: 10 * s, weight: 600, fill: p.faint, ls: 1.8 * s, ff: p.fbs }));
+  tiles.forEach((t, i) => {
+    out.push(R(t.x, t.y, t.w, t.h, S.radius * s, p.cardFill, S.shadow ? ` filter="url(#sh)"` : (S.cardStyle === "outline" ? ` stroke="${p.hair}" stroke-width="${r1(1.2 * s)}"` : "")));
+    const ic = Math.min(44 * s, t.h - 24 * s);
+    out.push(`<circle cx="${r1(t.x + 18 * s + ic / 2)}" cy="${r1(t.y + t.h / 2)}" r="${r1(ic / 2)}" fill="${p.tint}"/>`);
+    out.push(icon(t.icon, t.x + 18 * s + ic / 2 - ic * 0.25, t.y + t.h / 2 - ic * 0.25, ic * 0.5, p.acc));
+    const tx = t.x + 18 * s + ic + 16 * s;
+    out.push(T(tx, t.y + t.h / 2 - 5 * s, String(i + 1).padStart(2, "0"), { size: 10 * s, weight: 600, fill: p.faint, ls: 1 * s, ff: p.fbs }));
+    out.push(T(tx, t.y + t.h / 2 + 15 * s, fit(t.name, 17 * s, t.w - (tx - t.x) - 40 * s), { size: 17 * s, weight: 700, fill: p.ink, ff: p.fhs }));
+    out.push(`<path d="M${r1(t.x + t.w - 30 * s)} ${r1(t.y + t.h / 2)} h${r1(12 * s)} m${r1(-5 * s)} ${r1(-5 * s)} l${r1(5 * s)} ${r1(5 * s)} l${r1(-5 * s)} ${r1(5 * s)}" fill="none" stroke="${p.acc}" stroke-width="${r1(1.8 * s)}" stroke-linecap="round" stroke-linejoin="round"/>`);
+  });
+  return out.join("");
+}
+
+/* o: {mode: "edit" | "export" | "thumb", frame, cards} */
+function svgPage(pi, o = {}) {
+  const mode = o.mode || "export", g = geom(pi, o.frame), p = palette(), s = g.s, out = [];
+  out.push(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${g.W} ${g.H}" width="${g.W}" height="${g.H}">`);
+  out.push(`<defs><filter id="sh" x="-8%" y="-8%" width="116%" height="124%"><feDropShadow dx="0" dy="${r1(2 * s)}" stdDeviation="${r1(5 * s)}" flood-color="#0B1F1A" flood-opacity="${p.shadow}"/></filter></defs>`);
+  out.push(R(0, 0, g.W, g.H, 0, p.bg));
+  if (pi === -1) { out.push(menuSvg(g, p)); out.push("</svg>"); return out.join(""); }
+  out.push(navSvg(pi, g, p));
+  const pg = o.cards ? { name: "Overview", cards: o.cards } : S.pages[pi];
+  if (g.head) {
+    out.push(T(g.gx, g.ct.y + 20 * s + 26 * s, pg.name, { size: 24 * s, weight: 700, fill: p.ink, ff: p.fhs, ls: -0.3 * s }));
+    const sub = g.f === "header" ? "" : (g.f === "tabs" ? S.subtitle : [S.subtitle].filter(Boolean).join(""));
+    if (sub) out.push(T(g.gx, g.ct.y + 20 * s + 46 * s, fit(sub, 12 * s, g.gw * 0.6), { size: 12 * s, fill: p.faint, ff: p.fbs }));
+    const chip = "Data as of 01 Oct 2026", cw = tw(chip, 11 * s) + 24 * s;
+    out.push(`<rect x="${r1(g.gx + g.gw - cw)}" y="${r1(g.ct.y + 24 * s)}" width="${r1(cw)}" height="${r1(26 * s)}" rx="${r1(13 * s)}" fill="${p.cardFill}" stroke="${p.hair}" stroke-width="${r1(s)}"/>`);
+    out.push(T(g.gx + g.gw - cw / 2, g.ct.y + 41 * s, chip, { size: 11 * s, fill: p.body, anchor: "middle", ff: p.fbs }));
+  }
+  if (mode === "edit" && showGrid) {
+    for (let i = 0; i < COLS; i++) out.push(R(g.gx + i * (g.colW + g.gap), g.gy, g.colW, g.gh, 0, p.acc, ` fill-opacity="${S.mode === "dark" ? 0.07 : 0.05}" pointer-events="none"`));
+    for (let j = 1; j < ROWS; j++) out.push(R(g.gx, g.gy + j * (g.rowH + g.gap) - g.gap / 2, g.gw, Math.max(0.6, 0.6 * s), 0, p.acc, ` fill-opacity="0.12" pointer-events="none"`));
+  }
+  const cards = drag && drag.temp && mode === "edit" ? [...pg.cards, drag.temp] : pg.cards;
+  for (const c of cards) {
+    out.push(`<g${mode === "edit" ? ` data-card="${c.id}"` : ""}>` + cardSvg(c, g, p) + (mode !== "export" && (ghosts || mode === "thumb") ? ghostSvg(c, g, p) : "") + "</g>");
+  }
+  if (g.foot) {
+    const fy = g.H - 15 * s;
+    out.push(T(g.gx, fy, fit(S.footer, 10 * s, g.gw * 0.7), { size: 10 * s, fill: p.faint, ff: p.fbs }));
+    out.push(T(g.gx + g.gw, fy, `${S.company ? S.company + "  ·  " : ""}${pi + 1 + (S.menu ? 1 : 0)} / ${pageCount()}`, { size: 10 * s, fill: p.faint, anchor: "end", ff: p.fbs }));
+  }
+  if (mode === "edit") {
+    const over = overlaps(pg.cards);
+    for (const c of pg.cards) if (over.has(c.id)) { const r = rectOf(c, g); out.push(`<rect x="${r1(r.x)}" y="${r1(r.y)}" width="${r1(r.w)}" height="${r1(r.h)}" rx="${r1(S.radius * s)}" fill="#C0402E" fill-opacity="0.08" stroke="#C0402E" stroke-width="${r1(2 * s)}" stroke-dasharray="${r1(6 * s)} ${r1(4 * s)}" pointer-events="none"/>`); }
+    const sc = pg.cards.find((c) => c.id === sel) || (drag && drag.temp);
+    if (sc) {
+      const r = rectOf(sc, g), hs = 12 * s;
+      out.push(`<rect x="${r1(r.x - 3 * s)}" y="${r1(r.y - 3 * s)}" width="${r1(r.w + 6 * s)}" height="${r1(r.h + 6 * s)}" rx="${r1(S.radius * s + 3 * s)}" fill="none" stroke="#0B7A6C" stroke-width="${r1(2.2 * s)}" pointer-events="none"/>`);
+      const lab = `${TYPES[sc.type].label} · ${sc.w} × ${sc.h} cells`, lw = tw(lab, 10.5 * s) + 16 * s;
+      out.push(R(r.x - 3 * s, r.y - 26 * s, lw, 20 * s, 4 * s, "#0B7A6C", ` pointer-events="none"`) + T(r.x + 5 * s, r.y - 12 * s, lab, { size: 10.5 * s, weight: 600, fill: "#FFFFFF" }));
+      if (!drag || !drag.temp) out.push(`<rect data-handle="${sc.id}" x="${r1(r.x + r.w - hs / 2)}" y="${r1(r.y + r.h - hs / 2)}" width="${r1(hs)}" height="${r1(hs)}" rx="${r1(3 * s)}" fill="#FFFFFF" stroke="#0B7A6C" stroke-width="${r1(2 * s)}"/>`);
+    }
+  }
+  out.push("</svg>");
+  return out.join("");
+}
+
+function overlaps(cards) {
+  const hit = new Set();
+  for (let i = 0; i < cards.length; i++) for (let j = i + 1; j < cards.length; j++) {
+    const a = cards[i], b = cards[j];
+    if (a.c < b.c + b.w && b.c < a.c + a.w && a.r < b.r + b.h && b.r < a.r + a.h) { hit.add(a.id); hit.add(b.id); }
+  }
+  return hit;
+}
+
+/* ---------------------------------------------------------------- rail UI */
+
+function seg(el, val) { $$("button", el).forEach((b) => { const on = b.dataset.v === String(val); b.classList.toggle("on", on); b.setAttribute("aria-pressed", on); }); }
+
+function renderRail() {
+  const p = palette();
+  $("#lg-frames").innerHTML = FRAMES.map(([id, name]) => `<button type="button" class="fr${S.frame === id ? " on" : ""}" data-v="${id}" aria-pressed="${S.frame === id}">${svgPage(Math.max(0, S.cur), { mode: "thumb", frame: id, cards: withIdsTmp(LAYOUTS.exec.cards) })}<span>${name}</span></button>`).join("");
+  $("#lg-navtone").innerHTML = TONES.map(([id, name]) => {
+    const a = S.accent || p.brand.colors[0], dark = S.mode === "dark";
+    const c = id === "ink" ? (dark ? tk.mix(a, -0.94) : tk.mix(a, -0.78)) : id === "brand" ? a : id === "tint" ? (dark ? tk.mix(a, -0.72) : tk.mix(a, 0.84)) : p.card;
+    return `<button type="button" data-v="${id}"><i style="background:${c}"></i>${name}</button>`;
+  }).join("");
+  seg($("#lg-navtone"), S.navTone); seg($("#lg-active"), S.activeStyle); seg($("#lg-mode"), S.mode);
+  seg($("#lg-cfill"), S.cardFill); seg($("#lg-gap"), S.gap);
+  $("#lg-sizes").innerHTML = Object.entries(SIZES).map(([k, v]) => { const sc = 30 / v.w; return `<button type="button" class="sz${S.size === k ? " on" : ""}" data-v="${k}" aria-pressed="${S.size === k}"><i style="width:${r1(v.w * sc)}px;height:${r1(v.h * sc)}px"></i><span><b>${v.w} × ${v.h}</b>${v.lab} ${v.note}</span></button>`; }).join("");
+  $$(".pal").forEach((el) => el.classList.toggle("on", el.dataset.id === S.preset));
+  $("#lg-accent").value = (S.accent || p.brand.colors[0]).toLowerCase();
+  $("#lg-accent-hex").textContent = S.accent ? S.accent + ", your colour" : p.brand.colors[0] + ", from " + presetOf().name;
+  $("#lg-accent-reset").hidden = !S.accent;
+  $("#lg-menu").checked = S.menu; $("#lg-shadow").checked = S.shadow; $("#lg-phead").checked = S.pageHeader; $("#lg-bake").checked = S.bake;
+  $("#lg-rad").value = S.radius; $("#lg-rad-v").textContent = S.radius + " px";
+  for (const k of ["title", "company", "subtitle", "footer"]) { const el = $("#lg-" + k); if (document.activeElement !== el) el.value = S[k]; }
+  $("#lg-logoprev").style.backgroundImage = S.logo ? `url("${S.logo}")` : "none";
+  $("#lg-logo-del").hidden = !S.logo;
+  $("#lg-cstyles").innerHTML = CSTYLES.map(([id, name]) => `<button type="button" class="cs${S.cardStyle === id ? " on" : ""}" data-v="${id}" aria-pressed="${S.cardStyle === id}">${cardThumb(id, p)}<span>${name}</span></button>`).join("");
+  renderPagesList();
+}
+function withIdsTmp(cards) { return cards.map((c, i) => ({ ...c, id: "t" + i })); }
+function cardThumb(style, p) {
+  const out = [`<svg viewBox="0 0 64 44" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="44" fill="${p.bg}"/>`];
+  const x = 7, y = 6, w = 50, h = 32, rad = Math.min(8, S.radius * 0.6);
+  if (style === "outline") out.push(`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${rad}" fill="${p.cardFill}" stroke="${p.hair}" stroke-width="1.2"/>`);
+  else out.push(`<rect x="${x}" y="${y + 1}" width="${w}" height="${h}" rx="${rad}" fill="#0B1F1A" fill-opacity="${S.shadow ? 0.08 : 0}"/><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${rad}" fill="${p.cardFill}"/>`);
+  if (style === "band") out.push(`<path d="M${x} ${y + 9} V${y + rad} Q${x} ${y} ${x + rad} ${y} H${x + w - rad} Q${x + w} ${y} ${x + w} ${y + rad} V${y + 9} Z" fill="${p.tint}"/><rect x="${x + 5}" y="${y + 3.5}" width="20" height="2.5" rx="1" fill="${p.ink}"/>`);
+  else if (style === "tick") out.push(`<rect x="${x + 5}" y="${y + 4}" width="2" height="6" rx="1" fill="${p.acc}"/><rect x="${x + 10}" y="${y + 5.8}" width="20" height="2.5" rx="1" fill="${p.ink}"/>`);
+  else out.push(`<rect x="${x + 5}" y="${y + 5.8}" width="22" height="2.5" rx="1" fill="${p.ink}"/>`);
+  [0.5, 0.8, 0.6, 0.9].forEach((v, i) => out.push(`<rect x="${x + 8 + i * 10}" y="${y + h - 4 - v * 16}" width="6" height="${v * 16}" rx="1" fill="${p.acc}" fill-opacity="0.45"/>`));
+  out.push("</svg>"); return out.join("");
+}
+
+function renderPagesList() {
+  $("#lg-pages").innerHTML = S.pages.map((pg, i) => `<li data-i="${i}" class="${S.cur === i ? "cur" : ""}">
+    <button type="button" class="pico" data-act="icon" title="Change the icon" aria-label="Change the icon of ${esc(pg.name)}"><svg viewBox="0 0 24 24"><path d="${ICONS[pg.icon] || ICONS.chart}"/></svg></button>
+    <input type="text" value="${esc(pg.name)}" maxlength="28" aria-label="Name of page ${i + 1}" />
+    <button type="button" class="ib" data-act="up" aria-label="Move page up" ${i === 0 ? "disabled" : ""}>&#8593;</button>
+    <button type="button" class="ib x" data-act="del" aria-label="Remove page" ${S.pages.length <= 1 ? "disabled" : ""}>&#215;</button>
+  </li>`).join("");
+  $("#lg-addpage").disabled = S.pages.length >= 10;
+}
+
+/* ---------------------------------------------------------------- stage UI */
+
+function renderTabs() {
+  const list = []; if (S.menu) list.push({ i: -1, name: "Home menu", icon: "home" });
+  S.pages.forEach((pg, i) => list.push({ i, name: pg.name, icon: pg.icon }));
+  $("#lg-ptabs").innerHTML = list.map((t) => `<button type="button" role="tab" class="ptab${t.i === S.cur ? " on" : ""}" aria-selected="${t.i === S.cur}" data-i="${t.i}"><svg viewBox="0 0 24 24"><path d="${ICONS[t.icon] || ICONS.chart}"/></svg>${esc(t.name)}</button>`).join("");
+  const isMenu = S.cur === -1;
+  $("#lg-add").innerHTML = isMenu ? `<span class="lbl">Home menu</span><span class="capt" style="margin:0">One tile per page, wired to its page in the .pbip. Edit the text and pages on the left.</span>` :
+    `<span class="lbl">Add</span>` + Object.entries(TYPES).map(([k, t]) => `<button type="button" class="addb${tool === k ? " on" : ""}" data-t="${k}" title="Click to add a ${t.label.toLowerCase()}, or pick it and drag on the canvas"><svg viewBox="0 0 24 24"><path d="${t.icon}"/></svg>${t.label}</button>`).join("");
+}
+
+function renderStage() {
+  $("#lg-canvas").innerHTML = svgPage(S.cur, { mode: "edit" });
+  const pg = S.pages[S.cur];
+  const capt = [];
+  if (S.cur === -1) capt.push("Home menu: the tiles become page buttons in the .pbip.");
+  else {
+    capt.push(`${pg.cards.length} card${pg.cards.length === 1 ? "" : "s"} on a 12 by 12 grid`);
+    const ov = overlaps(pg.cards).size; if (ov) capt.push(`<b>${ov} cards overlap</b>`);
+    capt.push(ghosts ? "Sample visuals show in the preview only, never in the download." : "Preview shows what the PNG will hold.");
+  }
+  $("#lg-capt").innerHTML = capt.map((c) => `<span>${c}</span>`).join("");
+  $("#lg-undo").disabled = !undo.length; $("#lg-redo").disabled = !redo.length;
+}
+
+function layThumb(lay, p) {
+  const out = [`<svg viewBox="0 0 96 56" xmlns="http://www.w3.org/2000/svg"><rect width="96" height="56" rx="3" fill="${p.bg}"/>`];
+  const gx = 5, gy = 5, gw = 86, gh = 46, g = 1.6, cw = (gw - 11 * g) / 12, rh = (gh - 11 * g) / 12;
+  for (const c of LAYOUTS[lay].cards) {
+    const x = gx + c.c * (cw + g), y = gy + c.r * (rh + g), w = c.w * cw + (c.w - 1) * g, h = c.h * rh + (c.h - 1) * g;
+    out.push(`<rect x="${r1(x)}" y="${r1(y)}" width="${r1(w)}" height="${r1(h)}" rx="1.5" fill="${p.cardFill}" stroke="${p.hair}" stroke-width=".5"/>`);
+    out.push(`<rect x="${r1(x + 1.5)}" y="${r1(y + 1.5)}" width="${r1(Math.min(w - 3, 9))}" height="1.6" rx=".8" fill="${c.type === "kpi" ? p.acc : p.faint}" fill-opacity=".8"/>`);
+  }
+  if (!LAYOUTS[lay].cards.length) out.push(`<text x="48" y="32" text-anchor="middle" font-size="8" fill="${p.faint}" font-family="Segoe UI, sans-serif">empty</text>`);
+  out.push("</svg>"); return out.join("");
+}
+
+function renderBelow() {
+  const p = palette(), isMenu = S.cur === -1, pg = S.pages[S.cur];
+  $("#lg-lays").innerHTML = isMenu ? `<p class="capt" style="margin:0">Pick a content page to choose its layout.</p>` : Object.entries(LAYOUTS).map(([k, l]) => `<button type="button" class="lay${pg.layout === k ? " on" : ""}" data-l="${k}">${layThumb(k, p)}<span>${l.name}</span></button>`).join("");
+  const c = !isMenu && pg.cards.find((x) => x.id === sel);
+  const ins = $("#lg-insp");
+  if (!c) {
+    ins.innerHTML = `<div class="ih"><h3>${isMenu ? "Home menu" : "Nothing selected"}</h3></div>
+      <p>${isMenu ? "The left panel carries your logo, report title and subtitle. Each tile on the right opens its page." : "Click a card to edit it. Pick a type above and drag on an empty part of the grid to draw a new card."}</p>
+      <p class="keys"><kbd>Arrows</kbd> move · <kbd>Shift</kbd>+<kbd>Arrows</kbd> resize · <kbd>Del</kbd> remove · <kbd>Ctrl</kbd>+<kbd>D</kbd> duplicate · <kbd>Ctrl</kbd>+<kbd>Z</kbd> undo</p>`;
+    return;
+  }
+  const g = geom(S.cur), r = rectOf(c, g);
+  ins.innerHTML = `<div class="ih"><h3>${TYPES[c.type].label}</h3><span><button type="button" class="btn2 small quiet" data-act="dup">Duplicate</button> <button type="button" class="btn2 small danger" data-act="del">Delete</button></span></div>
+    <div class="types">${Object.entries(TYPES).map(([k, t]) => `<button type="button" class="addb${c.type === k ? " on" : ""}" data-type="${k}"><svg viewBox="0 0 24 24"><path d="${t.icon}"/></svg>${t.label}</button>`).join("")}</div>
+    <label>Title<input type="text" id="lg-ctitle" value="${esc(c.title || "")}" maxlength="40" /></label>
+    <div class="nums"><div><small>X</small><b>${Math.round(r.x)}</b></div><div><small>Y</small><b>${Math.round(r.y)}</b></div><div><small>Width</small><b>${Math.round(r.w)}</b></div><div><small>Height</small><b>${Math.round(r.h)}</b></div></div>
+    <p class="keys">Card frame in Power BI pixels. The visual goes on its slot, listed in the table below.</p>`;
+}
+
+function renderPositions() {
+  const zs = zones(S.cur), { w, h } = sizeOf();
+  $("#lg-pos-page").textContent = S.cur === -1 ? "the home menu" : S.pages[S.cur].name;
+  $("#lg-pos-size").textContent = w + " × " + h;
+  const p = palette();
+  $("#lg-pos").innerHTML = `<thead><tr><th>Zone</th><th>Goes to / visual</th><th class="n">X</th><th class="n">Y</th><th class="n">Width</th><th class="n">Height</th></tr></thead><tbody>` +
+    zs.map((z) => `<tr class="${z.id && z.id === sel ? "on" : ""}"><td class="${z.slot ? "sl" : ""}">${esc(z.name)}</td><td><span class="kd"><i style="background:${z.kind === "button" ? p.nav : z.slot ? p.acc : p.hair}"></i>${esc(z.what)}</span></td><td class="n">${z.x}</td><td class="n">${z.y}</td><td class="n">${z.w}</td><td class="n">${z.h}</td></tr>`).join("") + "</tbody>";
+}
+
+function zones(pi) {
+  const g = geom(pi), out = [], R0 = (o) => ({ ...o, x: Math.round(o.x), y: Math.round(o.y), w: Math.round(o.w), h: Math.round(o.h) });
+  const items = pi === -1 ? menuTiles(g) : navItems(pi, g);
+  for (const it of items) if (it.to !== pi) out.push(R0({ name: (pi === -1 ? "Tile: " : "Button: ") + it.name, what: "Page navigation to " + (it.to === -1 ? "Home" : S.pages[it.to].name), kind: "button", x: it.x, y: it.y, w: it.w, h: it.h, to: it.to }));
+  if (pi !== -1) {
+    for (const z of filterSlots(g)) out.push(R0({ name: "Filter: " + z.name, what: "Slicer (dropdown)", kind: "filter", slot: true, x: z.x, y: z.y, w: z.w, h: z.h }));
+    for (const c of S.pages[pi].cards) {
+      const r = rectOf(c, g), sl = slotOf(c, g);
+      out.push(R0({ name: "Card: " + (c.title || TYPES[c.type].label), what: "Card frame in the background", kind: "card", id: c.id, x: r.x, y: r.y, w: r.w, h: r.h }));
+      out.push(R0({ name: "Slot: " + (c.title || TYPES[c.type].label), what: TYPES[c.type].label + " visual", kind: "visual", slot: true, id: c.id, type: c.type, title: c.title, x: sl.x, y: sl.y, w: sl.w, h: sl.h }));
+    }
+  }
+  return out;
+}
+
+function renderAll() { renderRail(); renderTabs(); renderStage(); renderBelow(); renderPositions(); $("#lg-pbipname").textContent = fileBase() + ".zip"; save(); }
+function renderPage() { renderTabs(); renderStage(); renderBelow(); renderPositions(); save(); }
+
+/* ---------------------------------------------------------------- events: rail */
+
+$$(".gt").forEach((b) => b.addEventListener("click", () => { const g = b.closest(".grp"); const open = g.dataset.open !== "1"; g.dataset.open = open ? "1" : "0"; b.setAttribute("aria-expanded", open); }));
+const onSeg = (id, key, cast = (v) => v) => $(id).addEventListener("click", (e) => { const b = e.target.closest("button[data-v]"); if (!b) return; snap(); S[key] = cast(b.dataset.v); renderAll(); });
+onSeg("#lg-frames", "frame"); onSeg("#lg-navtone", "navTone"); onSeg("#lg-active", "activeStyle"); onSeg("#lg-sizes", "size");
+onSeg("#lg-mode", "mode"); onSeg("#lg-cfill", "cardFill"); onSeg("#lg-gap", "gap", Number); onSeg("#lg-cstyles", "cardStyle");
+$("#lg-pals").addEventListener("click", (e) => { const b = e.target.closest(".pal"); if (!b) return; snap(); S.preset = b.dataset.id; S.accent = null; renderAll(); });
+$("#lg-accent").addEventListener("input", (e) => { S.accent = tk.normHex(e.target.value); renderAll(); });
+$("#lg-accent").addEventListener("change", () => snap());
+$("#lg-accent-reset").addEventListener("click", () => { snap(); S.accent = null; renderAll(); });
+for (const [id, key] of [["#lg-menu", "menu"], ["#lg-shadow", "shadow"], ["#lg-phead", "pageHeader"], ["#lg-bake", "bake"]]) $(id).addEventListener("change", (e) => { snap(); S[key] = e.target.checked; if (key === "menu" && !S.menu && S.cur === -1) S.cur = 0; if (key === "menu" && S.menu) S.cur = -1; renderAll(); });
+$("#lg-rad").addEventListener("input", (e) => { S.radius = +e.target.value; renderAll(); });
+for (const k of ["title", "company", "subtitle", "footer"]) $("#lg-" + k).addEventListener("input", (e) => { S[k] = e.target.value; renderAll(); });
+
+$("#lg-pages").addEventListener("input", (e) => {
+  const li = e.target.closest("li"); if (!li) return; const pg = S.pages[+li.dataset.i];
+  const wasAuto = pg.icon === autoIcon(pg.name); pg.name = e.target.value || "Page"; if (wasAuto) pg.icon = autoIcon(pg.name);
+  li.querySelector(".pico svg path").setAttribute("d", ICONS[pg.icon]);
+  renderRailLight(); renderPage();
+});
+function renderRailLight() { $$("#lg-frames .fr").forEach((b) => { const id = b.dataset.v; b.querySelector("svg").outerHTML = svgPage(Math.max(0, S.cur), { mode: "thumb", frame: id, cards: withIdsTmp(LAYOUTS.exec.cards) }); }); }
+$("#lg-pages").addEventListener("click", (e) => {
+  const b = e.target.closest("button[data-act]"); const li = e.target.closest("li"); if (!li) return;
+  const i = +li.dataset.i;
+  if (!b) { if (e.target.tagName === "INPUT" && S.cur !== i) { S.cur = i; sel = null; renderTabs(); renderStage(); renderBelow(); renderPositions(); $$("#lg-pages li").forEach((x) => x.classList.toggle("cur", +x.dataset.i === i)); } return; }
+  snap();
+  if (b.dataset.act === "icon") { const pg = S.pages[i]; pg.icon = ICON_ORDER[(ICON_ORDER.indexOf(pg.icon) + 1) % ICON_ORDER.length]; }
+  if (b.dataset.act === "up" && i > 0) { [S.pages[i - 1], S.pages[i]] = [S.pages[i], S.pages[i - 1]]; if (S.cur === i) S.cur = i - 1; else if (S.cur === i - 1) S.cur = i; }
+  if (b.dataset.act === "del" && S.pages.length > 1) { S.pages.splice(i, 1); if (S.cur >= S.pages.length) S.cur = S.pages.length - 1; sel = null; }
+  renderAll();
+});
+$("#lg-addpage").addEventListener("click", () => {
+  if (S.pages.length >= 10) return; snap();
+  const names = ["Trends", "Customers", "Finance", "Operations", "Risks", "Schedule", "People", "Notes"];
+  const name = names.find((n) => !S.pages.some((p) => p.name === n)) || "Page " + (S.pages.length + 1);
+  S.pages.push(page(name, "quad")); S.cur = S.pages.length - 1; sel = null; renderAll();
+});
+$("#lg-logo-btn").addEventListener("click", () => $("#lg-logo").click());
+$("#lg-logo").addEventListener("change", (e) => {
+  const f = e.target.files[0]; if (!f) return;
+  if (f.size > 1.5e6) { status("That logo is over 1.5 MB. Use a smaller PNG or an SVG.", true); return; }
+  const rd = new FileReader(); rd.onload = () => { snap(); S.logo = rd.result; renderAll(); status("Logo placed. It stays in your browser."); }; rd.readAsDataURL(f); e.target.value = "";
+});
+$("#lg-logo-del").addEventListener("click", () => { snap(); S.logo = null; renderAll(); });
+
+/* ---------------------------------------------------------------- events: stage */
+
+$("#lg-ptabs").addEventListener("click", (e) => { const b = e.target.closest(".ptab"); if (!b) return; S.cur = +b.dataset.i; sel = null; renderRail(); renderPage(); });
+$("#lg-add").addEventListener("click", (e) => {
+  const b = e.target.closest(".addb"); if (!b || S.cur === -1) return;
+  tool = b.dataset.t; const [w, h] = TYPES[tool].def; const spot = freeSpot(S.pages[S.cur].cards, w, h);
+  snap(); const c = { id: "c" + uid++, type: tool, title: TYPES[tool].label, ...spot }; S.pages[S.cur].cards.push(c); sel = c.id; S.pages[S.cur].layout = null;
+  renderPage(); $("#lg-wrap").focus({ preventScroll: true });
+});
+function freeSpot(cards, w, h) {
+  for (let r = 0; r <= ROWS - h; r++) for (let c = 0; c <= COLS - w; c++) if (!cards.some((o) => c < o.c + o.w && o.c < c + w && r < o.r + o.h && o.r < r + h)) return { c, r, w, h };
+  return { c: 0, r: 0, w, h };
+}
+$("#lg-lays").addEventListener("click", (e) => { const b = e.target.closest(".lay"); if (!b || S.cur === -1) return; snap(); const pg = S.pages[S.cur]; pg.layout = b.dataset.l; pg.cards = withIds(LAYOUTS[b.dataset.l].cards); sel = null; renderPage(); });
+$("#lg-insp").addEventListener("click", (e) => {
+  const pg = S.pages[S.cur]; const c = pg && pg.cards.find((x) => x.id === sel); if (!c) return;
+  const t = e.target.closest("[data-type]"), a = e.target.closest("[data-act]");
+  if (t) { snap(); if (c.title === TYPES[c.type].label) c.title = TYPES[t.dataset.type].label; c.type = t.dataset.type; renderPage(); }
+  if (a && a.dataset.act === "del") delSel();
+  if (a && a.dataset.act === "dup") dupSel();
+});
+$("#lg-insp").addEventListener("focusin", (e) => { if (e.target.id === "lg-ctitle") snap(); });
+$("#lg-insp").addEventListener("input", (e) => { if (e.target.id !== "lg-ctitle") return; const c = S.pages[S.cur].cards.find((x) => x.id === sel); if (c) { c.title = e.target.value; renderStage(); renderPositions(); save(); } });
+function delSel() { const pg = S.pages[S.cur]; if (!pg || !sel) return; snap(); pg.cards = pg.cards.filter((x) => x.id !== sel); pg.layout = null; sel = null; renderPage(); }
+function dupSel() { const pg = S.pages[S.cur]; const c = pg && pg.cards.find((x) => x.id === sel); if (!c) return; snap(); const spot = freeSpot(pg.cards, c.w, c.h); const n = { ...c, id: "c" + uid++, ...spot }; pg.cards.push(n); sel = n.id; renderPage(); }
+$("#lg-undo").addEventListener("click", () => { if (!undo.length) return; redo.push(JSON.stringify(S)); restore(undo.pop()); });
+$("#lg-redo").addEventListener("click", () => { if (!redo.length) return; undo.push(JSON.stringify(S)); restore(redo.pop()); });
+$("#lg-grid").addEventListener("click", (e) => { showGrid = !showGrid; e.currentTarget.setAttribute("aria-pressed", showGrid); renderStage(); });
+$("#lg-ghost").addEventListener("click", (e) => { ghosts = !ghosts; e.currentTarget.setAttribute("aria-pressed", ghosts); renderStage(); });
+
+function toPt(e) { const svg = $("#lg-canvas svg"), b = svg.getBoundingClientRect(), { w, h } = sizeOf(); return { x: (e.clientX - b.left) * w / b.width, y: (e.clientY - b.top) * h / b.height }; }
+function cellAt(pt, g) { return { c: clamp(Math.floor((pt.x - g.gx + g.gap / 2) / (g.colW + g.gap)), 0, COLS - 1), r: clamp(Math.floor((pt.y - g.gy + g.gap / 2) / (g.rowH + g.gap)), 0, ROWS - 1) }; }
+let raf = 0; const paint = () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(renderStage); };
+
+$("#lg-canvas").addEventListener("pointerdown", (e) => {
+  if (S.cur === -1 || e.button !== 0) return;
+  const g = geom(S.cur), pt = toPt(e), cell = cellAt(pt, g), pg = S.pages[S.cur];
+  const hd = e.target.closest("[data-handle]"), cg = e.target.closest("[data-card]");
+  if (hd) { const c = pg.cards.find((x) => x.id === hd.dataset.handle); drag = { kind: "size", c, start: JSON.stringify(S), moved: false }; }
+  else if (cg) { const c = pg.cards.find((x) => x.id === cg.dataset.card); sel = c.id; drag = { kind: "move", c, dc: cell.c - c.c, dr: cell.r - c.r, start: JSON.stringify(S), moved: false }; renderBelow(); renderPositions(); }
+  else if (pt.x >= g.gx && pt.x <= g.gx + g.gw && pt.y >= g.gy && pt.y <= g.gy + g.gh) { sel = null; drag = { kind: "draw", a: cell, temp: { id: "tmp", type: tool, title: TYPES[tool].label, c: cell.c, r: cell.r, w: 1, h: 1 } }; $("#lg-canvas").classList.add("drawing"); }
+  else { sel = null; renderBelow(); renderPositions(); }
+  $("#lg-wrap").focus({ preventScroll: true });
+  e.currentTarget.setPointerCapture(e.pointerId); paint();
+});
+$("#lg-canvas").addEventListener("pointermove", (e) => {
+  if (!drag) return; const g = geom(S.cur), cell = cellAt(toPt(e), g), c = drag.c;
+  if (drag.kind === "move") { const nc = clamp(cell.c - drag.dc, 0, COLS - c.w), nr = clamp(cell.r - drag.dr, 0, ROWS - c.h); if (nc !== c.c || nr !== c.r) { c.c = nc; c.r = nr; drag.moved = true; paint(); } }
+  if (drag.kind === "size") { const nw = clamp(cell.c - c.c + 1, 1, COLS - c.c), nh = clamp(cell.r - c.r + 1, 1, ROWS - c.r); if (nw !== c.w || nh !== c.h) { c.w = nw; c.h = nh; drag.moved = true; paint(); } }
+  if (drag.kind === "draw") { const a = drag.a, t = drag.temp; t.c = Math.min(a.c, cell.c); t.r = Math.min(a.r, cell.r); t.w = Math.abs(cell.c - a.c) + 1; t.h = Math.abs(cell.r - a.r) + 1; paint(); }
+});
+const endDrag = () => {
+  if (!drag) return; const d = drag; drag = null; $("#lg-canvas").classList.remove("drawing");
+  const pg = S.pages[S.cur];
+  if (d.kind === "draw") {
+    let t = d.temp; if (t.w === 1 && t.h === 1) { const [w, h] = TYPES[tool].def; t = { ...t, w: Math.min(w, COLS - t.c), h: Math.min(h, ROWS - t.r) }; }
+    snap(); const c = { ...t, id: "c" + uid++ }; pg.cards.push(c); sel = c.id; pg.layout = null;
+  } else if (d.moved) { undo.push(d.start); redo = []; pg.layout = null; }
+  renderPage();
+};
+$("#lg-canvas").addEventListener("pointerup", endDrag);
+$("#lg-canvas").addEventListener("pointercancel", endDrag);
+
+$("#lg-wrap").addEventListener("keydown", (e) => {
+  const mod = e.ctrlKey || e.metaKey;
+  if (mod && e.key.toLowerCase() === "z") { e.preventDefault(); $(e.shiftKey ? "#lg-redo" : "#lg-undo").click(); return; }
+  if (mod && e.key.toLowerCase() === "y") { e.preventDefault(); $("#lg-redo").click(); return; }
+  const pg = S.pages[S.cur]; const c = pg && pg.cards.find((x) => x.id === sel); if (!c) return;
+  if (mod && e.key.toLowerCase() === "d") { e.preventDefault(); dupSel(); return; }
+  if (e.key === "Delete" || e.key === "Backspace") { e.preventDefault(); delSel(); return; }
+  if (e.key === "Escape") { sel = null; renderPage(); return; }
+  const dx = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0, dy = e.key === "ArrowDown" ? 1 : e.key === "ArrowUp" ? -1 : 0;
+  if (!dx && !dy) return; e.preventDefault(); snap();
+  if (e.shiftKey) { c.w = clamp(c.w + dx, 1, COLS - c.c); c.h = clamp(c.h + dy, 1, ROWS - c.r); }
+  else { c.c = clamp(c.c + dx, 0, COLS - c.w); c.r = clamp(c.r + dy, 0, ROWS - c.h); }
+  pg.layout = null; renderPage();
+});
+
+/* ---------------------------------------------------------------- export */
+
+function status(msg, err) { const s = $("#lg-status"); s.textContent = msg || ""; s.classList.toggle("err", !!err); }
+const fileBase = () => tk.slug(plainTitle() || "report") + "-layout";
+const pageFile = (pi, i) => `${String(i + 1).padStart(2, "0")}-${tk.slug(pi === -1 ? "home" : S.pages[pi].name)}`;
+const allPis = () => [...(S.menu ? [-1] : []), ...S.pages.map((_, i) => i)];
+
+async function pngBytes(pi, scale = 2) {
+  const svg = svgPage(pi, { mode: "export" }), { w, h } = sizeOf();
+  const img = new Image(); img.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg);
+  await img.decode();
+  const cv = document.createElement("canvas"); cv.width = w * scale; cv.height = h * scale;
+  const cx = cv.getContext("2d"); cx.drawImage(img, 0, 0, cv.width, cv.height);
+  const blob = await new Promise((res) => cv.toBlob(res, "image/png"));
+  return new Uint8Array(await blob.arrayBuffer());
+}
+
+function themeObj() {
+  const p = palette(), b = p.brand;
+  const t = tk.powerbiTheme({ ...b, name: tk.slug(plainTitle()) + "-layout.json", colors: p.series, background: p.cardFill, panel: p.bg, ink: p.ink, body: p.body, hairline: p.hair, gridline: p.grid, fontHeading: p.fh === "Segoe UI" ? "Segoe UI Semibold" : p.fh, fontBody: p.fb });
+  const vs = t.visualStyles["*"]["*"];
+  vs.background = [{ show: false }];
+  vs.border = [{ show: false }];
+  vs.dropShadow = [{ show: false }];
+  vs.title = [{ show: !S.bake, fontColor: { solid: { color: p.ink } }, fontFamily: p.fh, alignment: "left" }];
+  t.visualStyles.page = { "*": { background: [{ color: { solid: { color: p.bg } }, transparency: 0 }], outspace: [{ color: { solid: { color: p.bg } }, transparency: 0 }] } };
+  t.visualStyles.actionButton = { "*": { fill: [{ show: false }], outline: [{ show: false }], icon: [{ show: false }], text: [{ show: false }] } };
+  return t;
+}
+
+function positionsRows() {
+  const rows = [["page", "zone", "visual", "x", "y", "width", "height"]];
+  for (const pi of allPis()) for (const z of zones(pi)) rows.push([pi === -1 ? "Home" : S.pages[pi].name, z.name, z.what, z.x, z.y, z.w, z.h]);
+  return rows;
+}
+const csv = (rows) => rows.map((r) => r.map((v) => /[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : v).join(",")).join("\r\n");
+const readme = () => [
+  `${plainTitle()}: Power BI layout`, "", `Made with the Power BI Layout Studio, https://babarda.com/tools/powerbi-layout/`, `Canvas: ${sizeOf().w} x ${sizeOf().h} px. Pages: ${allPis().length}.`, "",
+  "1. Load the theme: View > Themes > Browse for themes > theme.json. Visual backgrounds turn transparent so the image shows through.",
+  "2. For each page: Format page > Canvas background > Browse > the PNG. Image fit: Fit. Transparency: 0%.",
+  "3. Place each visual on its slot: positions.csv lists x, y, width and height in Power BI pixels (Format > General > Properties).",
+  "4. Buttons: put a blank button on each Button zone, Action > Type: Page navigation > Destination: the page named in the row.",
+].join("\r\n");
+
+$("#lg-png").addEventListener("click", async () => { try { tk.download(fileBase() + "-" + pageFile(S.cur, allPis().indexOf(S.cur)) + ".png", await pngBytes(S.cur), "image/png"); status("PNG saved at twice the canvas size."); } catch (e) { status("The PNG could not be drawn: " + e.message, true); } });
+$("#lg-svg").addEventListener("click", () => { tk.download(fileBase() + "-" + pageFile(S.cur, allPis().indexOf(S.cur)) + ".svg", svgPage(S.cur, { mode: "export" }), "image/svg+xml"); status("SVG saved."); });
+$("#lg-theme").addEventListener("click", () => { tk.download(fileBase() + "-theme.json", JSON.stringify(themeObj(), null, 2), "application/json"); status("Theme saved. View, Themes, Browse for themes."); });
+$("#lg-csv").addEventListener("click", () => { tk.download(fileBase() + "-positions.csv", csv(positionsRows()), "text/csv"); status("Positions saved for every page."); });
+$("#lg-copy").addEventListener("click", async () => {
+  const rows = [["zone", "visual", "x", "y", "width", "height"], ...zones(S.cur).map((z) => [z.name, z.what, z.x, z.y, z.w, z.h])];
+  try { await navigator.clipboard.writeText(rows.map((r) => r.join("\t")).join("\n")); status("Table copied. Paste into Excel or a note."); } catch (e) { status("The browser blocked the clipboard. Use the CSV button.", true); }
+});
+$("#lg-zip").addEventListener("click", async (e) => {
+  const btn = e.currentTarget; btn.disabled = true; status("Drawing every page...");
+  try {
+    const files = [];
+    const pis = allPis();
+    for (let i = 0; i < pis.length; i++) files.push({ name: `pages/${pageFile(pis[i], i)}.png`, data: await pngBytes(pis[i]) });
+    files.push({ name: "theme.json", data: JSON.stringify(themeObj(), null, 2) }, { name: "positions.csv", data: csv(positionsRows()) }, { name: "README.txt", data: readme() });
+    tk.download(fileBase() + "-pages.zip", tk.zip(files), "application/zip"); status(`Zip saved: ${pis.length} pages, theme, positions and read-me.`);
+  } catch (err) { status("The zip failed: " + err.message, true); }
+  btn.disabled = false;
+});
+
+/* ---------------------------------------------------------------- pbip */
+
+const lit = (v) => ({ expr: { Literal: { Value: v } } });
+const q = (s) => `'${String(s).replace(/'/g, "''")}'`;
+const solid = (c) => ({ solid: { color: lit(q(c)) } });
+const J = (o) => JSON.stringify(o, null, 2);
+const SCH = "https://developer.microsoft.com/json-schemas/fabric/";
+const uuid = () => (crypto.randomUUID ? crypto.randomUUID() : "10000000-1000-4000-8000-100000000000".replace(/[018]/g, (c) => (c ^ (crypto.getRandomValues(new Uint8Array(1))[0] & (15 >> (c / 4)))).toString(16)));
+const pid = (pi) => (pi === -1 ? "home" : "p" + String(pi + 1).padStart(2, "0"));
+
+function visualJson(name, pos, z, visual) {
+  return J({ $schema: SCH + "item/report/definition/visualContainer/2.11.0/schema.json", name, position: { x: pos.x, y: pos.y, z, height: pos.h, width: pos.w, tabOrder: z }, visual });
+}
+const off = (k) => ({ [k]: [{ properties: { show: lit("false") } }] });
+function buttonVisual(target, label) {
+  const st = (id, props) => ({ properties: props, selector: { id } });
+  return {
+    visualType: "actionButton",
+    objects: {
+      fill: [st("default", { show: lit("false") }), st("hover", { show: lit("true"), fillColor: solid("#FFFFFF"), transparency: lit("85D") })],
+      icon: [st("default", { show: lit("false") })], outline: [st("default", { show: lit("false") })], text: [st("default", { show: lit("false") })],
+    },
+    visualContainerObjects: {
+      visualLink: [{ properties: { show: lit("true"), type: lit("'PageNavigation'"), navigationSection: lit(q(pid(target))), tooltip: lit(q("Open " + label)) } }],
+      ...off("background"), ...off("border"), ...off("dropShadow"),
+    },
+    drillFilterOtherVisuals: true,
+  };
+}
+function placeholderVisual(z) {
+  const vco = { ...off("background"), ...off("border"), ...off("dropShadow") };
+  if (!S.bake && z.title) vco.title = [{ properties: { show: lit("true"), text: lit(q(z.title)) } }];
+  else vco.title = [{ properties: { show: lit("false") } }];
+  if (z.type === "text") {
+    return { visualType: "textbox", objects: { general: [{ properties: { paragraphs: [{ textRuns: [{ value: z.title || "Write the key message here", textStyle: { fontWeight: "bold", fontSize: "14pt", fontFamily: palette().fh } }] }, { textRuns: [{ value: "Replace this text with the two or three sentences the reader must take away.", textStyle: { fontSize: "10pt", fontFamily: palette().fb } }] }] } }] }, visualContainerObjects: vco, drillFilterOtherVisuals: true };
+  }
+  return { visualType: TYPES[z.type].pbi, query: { queryState: QUERY[z.type]() }, visualContainerObjects: vco, drillFilterOtherVisuals: true };
+}
+/* Every placeholder is bound to the one-row Placeholder table so the project validates and each visual draws. */
+const colRef = () => ({ field: { Column: { Expression: { SourceRef: { Entity: "Placeholder" } }, Property: "Item" } }, queryRef: "Placeholder.Item", nativeQueryRef: "Item" });
+const meaRef = () => ({ field: { Measure: { Expression: { SourceRef: { Entity: "Placeholder" } }, Property: "Value" } }, queryRef: "Placeholder.Value", nativeQueryRef: "Value" });
+const QUERY = {
+  kpi: () => ({ Values: { projections: [meaRef()] } }),
+  bar: () => ({ Category: { projections: [colRef()] }, Y: { projections: [meaRef()] } }),
+  line: () => ({ Category: { projections: [colRef()] }, Y: { projections: [meaRef()] } }),
+  donut: () => ({ Category: { projections: [colRef()] }, Y: { projections: [meaRef()] } }),
+  table: () => ({ Values: { projections: [colRef(), meaRef()] } }),
+  slicer: () => ({ Values: { projections: [colRef()] } }),
+  map: () => ({ Category: { projections: [colRef()] } }),
+};
+
+async function buildPbip() {
+  const name = (plainTitle() || "Report").replace(/[\\/:*?"<>|]/g, "").trim().slice(0, 40) || "Report";
+  const RP = name + ".Report", SM = name + ".SemanticModel", { w: W, h: H } = sizeOf();
+  const files = [], themeName = tk.slug(plainTitle()) + "-layout.json";
+  const base = await (await fetch("./CY26SU02.json")).text();
+  const pis = allPis(), images = [];
+  for (let i = 0; i < pis.length; i++) {
+    const pi = pis[i], img = `bg_${pid(pi)}_${Date.now().toString(36)}.png`;
+    images.push(img);
+    files.push({ name: `${RP}/StaticResources/RegisteredResources/${img}`, data: await pngBytes(pi) });
+    const p = palette();
+    files.push({ name: `${RP}/definition/pages/${pid(pi)}/page.json`, data: J({
+      $schema: SCH + "item/report/definition/page/2.1.0/schema.json", name: pid(pi), displayName: pi === -1 ? "Home" : S.pages[pi].name, displayOption: "FitToPage", height: H, width: W,
+      objects: {
+        background: [{ properties: { image: { image: { name: lit(q(img)), url: { expr: { ResourcePackageItem: { PackageName: "RegisteredResources", PackageType: 1, ItemName: img } } }, scaling: lit("'Fit'") } }, transparency: lit("0D") } }],
+        outspace: [{ properties: { color: solid(p.bg), transparency: lit("0D") } }],
+      },
+    }) });
+    let zi = 1000;
+    for (const z of zones(pi)) {
+      const vdir = `${RP}/definition/pages/${pid(pi)}/visuals`;
+      if (z.kind === "button") { const vn = `nav_${pid(pi)}_${pid(z.to)}`; files.push({ name: `${vdir}/${vn}/visual.json`, data: visualJson(vn, z, zi, buttonVisual(z.to, z.to === -1 ? "Home" : S.pages[z.to].name)) }); zi += 100; }
+      else if (z.kind === "visual") { const vn = `v_${pid(pi)}_${z.id}`; files.push({ name: `${vdir}/${vn}/visual.json`, data: visualJson(vn, z, zi, placeholderVisual(z)) }); zi += 100; }
+      else if (z.kind === "filter") { const vn = `f_${pid(pi)}_${tk.slug(z.name).replace(/-/g, "_")}`; files.push({ name: `${vdir}/${vn}/visual.json`, data: visualJson(vn, z, zi, { visualType: "slicer", query: { queryState: QUERY.slicer() }, objects: { data: [{ properties: { mode: lit("'Dropdown'") } }], header: [{ properties: { show: lit("false") } }] }, visualContainerObjects: { ...off("background"), ...off("border"), ...off("dropShadow"), ...off("title") }, drillFilterOtherVisuals: true }) }); zi += 100; }
+    }
+  }
+  const ver = { visual: "2.6.0", report: "3.1.0", page: "2.3.0" };
+  files.push({ name: `${name}.pbip`, data: J({ $schema: SCH + "pbip/pbipProperties/1.0.0/schema.json", version: "1.0", artifacts: [{ report: { path: RP } }], settings: { enableAutoRecovery: true } }) });
+  files.push({ name: `${RP}/.platform`, data: J({ $schema: SCH + "gitIntegration/platformProperties/2.0.0/schema.json", metadata: { type: "Report", displayName: name }, config: { version: "2.0", logicalId: uuid() } }) });
+  files.push({ name: `${RP}/definition.pbir`, data: J({ $schema: SCH + "item/report/definitionProperties/2.0.0/schema.json", version: "4.0", datasetReference: { byPath: { path: `../${SM}` } } }) });
+  files.push({ name: `${RP}/definition/version.json`, data: J({ $schema: SCH + "item/report/definition/versionMetadata/1.0.0/schema.json", version: "2.0.0" }) });
+  files.push({ name: `${RP}/definition/pages/pages.json`, data: J({ $schema: SCH + "item/report/definition/pagesMetadata/1.1.0/schema.json", pageOrder: pis.map(pid), activePageName: pid(pis[0]) }) });
+  files.push({ name: `${RP}/definition/report.json`, data: J({
+    $schema: SCH + "item/report/definition/report/3.3.0/schema.json",
+    themeCollection: { baseTheme: { name: "CY26SU02", reportVersionAtImport: ver, type: "SharedResources" }, customTheme: { name: themeName, reportVersionAtImport: ver, type: "RegisteredResources" } },
+    objects: { outspacePane: [{ properties: { expanded: lit("false") } }] },
+    resourcePackages: [
+      { name: "SharedResources", type: "SharedResources", items: [{ name: "CY26SU02", path: "BaseThemes/CY26SU02.json", type: "BaseTheme" }] },
+      { name: "RegisteredResources", type: "RegisteredResources", items: [{ name: themeName, path: themeName, type: "CustomTheme" }, ...images.map((im) => ({ name: im, path: im, type: "Image" }))] },
+    ],
+    settings: { useStylableVisualContainerHeader: true, defaultDrillFilterOtherVisuals: true, allowChangeFilterTypes: true, useEnhancedTooltips: true, useDefaultAggregateDisplayName: true },
+  }) });
+  files.push({ name: `${RP}/StaticResources/SharedResources/BaseThemes/CY26SU02.json`, data: base });
+  files.push({ name: `${RP}/StaticResources/RegisteredResources/${themeName}`, data: J(themeObj()) });
+  files.push({ name: `${SM}/.platform`, data: J({ $schema: SCH + "gitIntegration/platformProperties/2.0.0/schema.json", metadata: { type: "SemanticModel", displayName: name }, config: { version: "2.0", logicalId: uuid() } }) });
+  files.push({ name: `${SM}/definition.pbism`, data: J({ $schema: SCH + "item/semanticModel/definitionProperties/1.0.0/schema.json", version: "4.2", settings: {} }) });
+  files.push({ name: `${SM}/definition/database.tmdl`, data: "database\n\tcompatibilityLevel: 1606\n\n" });
+  files.push({ name: `${SM}/definition/model.tmdl`, data: "model Model\n\tculture: en-US\n\tdefaultPowerBIDataSourceVersion: powerBI_V3\n\tsourceQueryCulture: en-US\n\tdataAccessOptions\n\t\tlegacyRedirects\n\t\treturnErrorValuesAsNull\n\nannotation __PBI_TimeIntelligenceEnabled = 0\n\nannotation PBI_QueryOrder = [\"Placeholder\"]\n\nannotation PBI_ProTooling = [\"DevMode\"]\n\nref table Placeholder\n\n" });
+  files.push({ name: `${SM}/definition/tables/Placeholder.tmdl`, data: `/// One-row table so the project opens. Replace it with your own data (Home, Get data).\ntable Placeholder\n\tlineageTag: ${uuid()}\n\n\tcolumn Item\n\t\tdataType: string\n\t\tlineageTag: ${uuid()}\n\t\tsummarizeBy: none\n\t\tsourceColumn: Item\n\n\t/// Stand-in value for the placeholder visuals.\n\tmeasure Value = 1\n\t\tformatString: 0\n\t\tlineageTag: ${uuid()}\n\n\tpartition Placeholder = m\n\t\tmode: import\n\t\tsource =\n\t\t\t\tlet\n\t\t\t\t    Source = #table(type table [Item = text], {{"Replace me with your data"}})\n\t\t\t\tin\n\t\t\t\t    Source\n\n\tannotation PBI_Id = Placeholder\n\n` });
+  files.push({ name: "README.txt", data: readme().replace(/^1\./m, `Open ${name}.pbip in Power BI Desktop (unzip to a short path such as C:\\PBI\\ first). Pages, backgrounds, theme, page buttons and placeholder visuals are already in place.\r\n\r\nTo rebuild by hand:\r\n1.`) });
+  return { name, data: tk.zip(files) };
+}
+$("#lg-pbip").addEventListener("click", async (e) => {
+  const btn = e.currentTarget; btn.disabled = true; status("Building the Power BI project...");
+  try { const { data } = await buildPbip(); tk.download(fileBase() + ".zip", data, "application/zip"); status(`Project saved (${Math.round(data.length / 1024)} KB). Unzip to a short path such as C:\\PBI\\ and open the .pbip.`); }
+  catch (err) { status("The project could not be built: " + err.message, true); }
+  btn.disabled = false;
+});
+
+/* ---------------------------------------------------------------- start */
+
+load();
+if (S.cur >= S.pages.length || (S.cur === -1 && !S.menu)) S.cur = 0;
+window.__lg = { get S() { return S; }, buildPbip, pngBytes, themeObj, zones };
+renderAll();
+</script>

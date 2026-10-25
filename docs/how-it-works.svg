@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 250" width="960" height="250" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="960" height="250" rx="14" fill="#F4F8F7"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#5E7C77"/></marker>
+  </defs>
+
+  <!-- step 1 -->
+  <g transform="translate(30,30)">
+    <rect width="250" height="190" rx="12" fill="#fff" stroke="#D5E3E0"/>
+    <circle cx="28" cy="28" r="15" fill="#0F2A26"/><text x="28" y="33" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">1</text>
+    <text x="54" y="34" font-size="17" font-weight="700" fill="#0F2A26">Pick a frame</text>
+    <rect x="20" y="58" width="100" height="58" rx="5" fill="#E8F1EF"/><rect x="20" y="58" width="24" height="58" rx="5" fill="#0F2A26"/>
+    <rect x="130" y="58" width="100" height="58" rx="5" fill="#E8F1EF"/><rect x="130" y="58" width="100" height="12" rx="5" fill="#0F2A26"/>
+    <g transform="translate(20,128)">
+      <rect width="22" height="14" rx="3" fill="#008080"/><rect x="26" width="22" height="14" rx="3" fill="#1F4E79"/><rect x="52" width="22" height="14" rx="3" fill="#C0392B"/><rect x="78" width="22" height="14" rx="3" fill="#F2A900"/><rect x="104" width="22" height="14" rx="3" fill="#2E7D32"/>
+    </g>
+    <text x="20" y="168" font-size="12.5" fill="#3A4F4B">7 navigation frames, 16 palettes</text>
+    <text x="20" y="184" font-size="12.5" fill="#3A4F4B">or your brand colour, light or dark</text>
+  </g>
+  <path d="M290 125H345" stroke="#5E7C77" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- step 2 -->
+  <g transform="translate(355,30)">
+    <rect width="250" height="190" rx="12" fill="#fff" stroke="#D5E3E0"/>
+    <circle cx="28" cy="28" r="15" fill="#0F2A26"/><text x="28" y="33" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">2</text>
+    <text x="54" y="34" font-size="17" font-weight="700" fill="#0F2A26">Arrange the cards</text>
+    <g stroke="#E1EBE9"><path d="M20 58V148M45 58V148M70 58V148M95 58V148M120 58V148M145 58V148M170 58V148M195 58V148M220 58V148"/><path d="M20 58H230M20 88H230M20 118H230M20 148H230"/></g>
+    <rect x="22" y="60" width="96" height="26" rx="4" fill="#CFE6E2" stroke="#008080"/>
+    <rect x="122" y="60" width="106" height="26" rx="4" fill="#CFE6E2" stroke="#008080"/>
+    <rect x="22" y="90" width="146" height="56" rx="4" fill="#CFE6E2" stroke="#008080"/>
+    <rect x="172" y="90" width="56" height="56" rx="4" fill="#fff" stroke="#008080" stroke-dasharray="4 3"/>
+    <path d="M214 132l10 10" stroke="#0F2A26" stroke-width="2"/>
+    <text x="20" y="168" font-size="12.5" fill="#3A4F4B">Drag, resize or draw on a 12 x 12 grid</text>
+    <text x="20" y="184" font-size="12.5" fill="#3A4F4B">8 starting layouts, undo and redo</text>
+  </g>
+  <path d="M615 125H670" stroke="#5E7C77" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- step 3 -->
+  <g transform="translate(680,30)">
+    <rect width="250" height="190" rx="12" fill="#fff" stroke="#D5E3E0"/>
+    <circle cx="28" cy="28" r="15" fill="#0F2A26"/><text x="28" y="33" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">3</text>
+    <text x="54" y="34" font-size="17" font-weight="700" fill="#0F2A26">Open in Power BI</text>
+    <g font-size="12" font-weight="700" fill="#0F2A26">
+      <rect x="20" y="56" width="100" height="26" rx="13" fill="#F2A900"/><text x="70" y="73" text-anchor="middle">.pbip</text>
+      <rect x="130" y="56" width="100" height="26" rx="13" fill="#E8F1EF"/><text x="180" y="73" text-anchor="middle">PNG / SVG</text>
+      <rect x="20" y="90" width="100" height="26" rx="13" fill="#E8F1EF"/><text x="70" y="107" text-anchor="middle">theme .json</text>
+      <rect x="130" y="90" width="100" height="26" rx="13" fill="#E8F1EF"/><text x="180" y="107" text-anchor="middle">X Y W H .csv</text>
+    </g>
+    <text x="20" y="150" font-size="12.5" fill="#3A4F4B">Double-click the .pbip: pages,</text>
+    <text x="20" y="168" font-size="12.5" fill="#3A4F4B">backgrounds, theme and working</text>
+    <text x="20" y="184" font-size="12.5" fill="#3A4F4B">page buttons are already there</text>
+  </g>
+</svg>
